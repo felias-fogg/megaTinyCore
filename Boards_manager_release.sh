@@ -38,7 +38,7 @@ echo "Downloaded file: ${DOWNLOADED_FILE}"
 
 
 # Check whether most recent board file is already in the index
-if grep -q ${REPOSITORY}-${DOWNLOADED_FILE#"v"} package_${AUTHOR}_${REPOSITORY}_index.json; then
+if grep -q ${REPOSITORY}-${DOWNLOADED_FILE#"v"}\" package_${AUTHOR}_${REPOSITORY}_index.json; then
     echo "Most recent board version is already in the index file. Nothing to do."
     exit 1
 fi
