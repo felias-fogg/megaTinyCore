@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "megaTinyCore (Debug enabled)",
+      "name": "megaTinyCore",
       "maintainer": "Spence Konde",
       "websiteURL": "https://github.com/SpenceKonde/megaTinyCore",
       "email": "",
@@ -2932,7 +2932,7 @@
           ]
         },
         {
-          "name": "megaTinyCore (Debug enabled)",
+          "name": "megaTinyCore",
           "architecture": "megaavr",
           "version": "2.7.0-pre1",
           "category": "Contributed",
@@ -2981,7 +2981,7 @@
           ]
         },
         {
-          "name": "megaTinyCore (Debug enabled)",
+          "name": "megaTinyCore",
           "architecture": "megaavr",
           "version": "2.7.0-pre2",
           "category": "Contributed",
@@ -3030,7 +3030,7 @@
           ]
         },
         {
-          "name": "megaTinyCore (Debug enabled)",
+          "name": "megaTinyCore",
           "architecture": "megaavr",
           "version": "2.7.0",
           "category": "Contributed",
