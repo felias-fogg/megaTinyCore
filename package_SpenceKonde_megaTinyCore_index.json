@@ -2930,6 +2930,55 @@
               "name": "python3"
             }
           ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.7.0-pre1",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/megaTinyCore/megaTinyCore-2.7.0-pre1.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.7.0-pre1.tar.bz2",
+          "checksum": "SHA-256:1672ce5d72e30a27848e9dae9b327ee76466e4950f136e57b442dd24f5e1ffa8",
+          "size": "11821114",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.7.0-pre1 is the first experimental version to include the debug capability"
+            },
+            {
+              "name": "2.6.10 is a critical bugfix to 2.6.9. This also pulls in the fix for missing constants for ADCPowerOptions(), and board manager installations no longer elide the text portions of the documentation."
+            },
+            {
+              "name": "2.6.9 was largely a bugfix release, fixing the bootloaders (reburn bootloader if using optiboot if having entry condition issues, older versions with the new entry condition options had bad bootloader binaries that ignored the requested entry conditions.</br> 2.6.8 and older should not be used."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE, PICkit4, Power Debugger, and JTAGICE3 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b1"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "name": "avrocd-tools",
+              "version": "1.2.3"
+            }
+          ]
         }
       ],
       "tools": [
@@ -2985,6 +3034,68 @@
               "archiveFileName": "python3-via-env.tar.gz",
               "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
               "size": "292"
+            }
+          ]
+        },
+        {
+          "name": "avrocd-tools",
+          "version": "1.2.3",
+          "systems": [
+            {
+              "size": "1060",
+              "checksum": "SHA-256:ba3ce5bc522e4d06d17499343d70b17bddaed88e8383387ec27b4d383f2a42b4",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avrocd-tools-1.2.3-arm-linux-gnueabihf.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.2.3/avrocd-tools-1.2.3-arm-linux-gnueabihf.tar.gz"
+            },
+            {
+              "size": "36161728",
+              "checksum": "SHA-256:34014797b447fdcc0fddfef83a1486505211905920df41595d8a87404320a2b6",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.2.3-aarch64-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.2.3/avrocd-tools-1.2.3-aarch64-linux-gnu.tar.gz"
+            },
+            {
+              "size": "26783890",
+              "checksum": "SHA-256:6f5d85af80eb981acce58e599d0a514d134c559905980c8b5b20c5f307e5269b",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "avrocd-tools-1.2.3-x86_64-apple-darwin.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.2.3/avrocd-tools-1.2.3-x86_64-apple-darwin.tar.gz"
+            },
+            {
+              "size": "36543784",
+              "checksum": "SHA-256:2064b54c9a5f4e206452e5935c45a5d70c51fcef8d8e206c04399dd5673ef77a",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.2.3-x86_64-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.2.3/avrocd-tools-1.2.3-x86_64-linux-gnu.tar.gz"
+            },
+            {
+              "size": "1067",
+              "checksum": "SHA-256:83a8aa14bb86d2ed2fcdbaae69436d8c35879981cd3cb25bbf312f3b5796b789",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.2.3-i686-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.2.3/avrocd-tools-1.2.3-i686-linux-gnu.tar.gz"
+            },
+            {
+              "size": "17608303",
+              "checksum": "SHA-256:87bb2436d6f2d5de44cd047fcd3e5dbcd8399ae5b14a1d1edefa51e914b8ad9f",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "avrocd-tools-1.2.3-x86_64-mingw32.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.2.3/avrocd-tools-1.2.3-x86_64-mingw32.tar.gz"
+            },
+            {
+              "size": "25359859",
+              "checksum": "SHA-256:4fd9013a98d2bd778b3bf4b41601ee812ee6e6898ad8722585043199c4c94d4a",
+              "host": "arm64-apple-darwin",
+              "archiveFileName": "avrocd-tools-1.2.3-arm64-apple-darwin.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.2.3/avrocd-tools-1.2.3-arm64-apple-darwin.tar.gz"
+            },
+            {
+              "size": "15623464",
+              "checksum": "SHA-256:cf672177853628f042bcb5c1f994bd2744b6881a35c4bbf857fea5f0f81ffb33",
+              "host": "i686-mingw32",
+              "archiveFileName": "avrocd-tools-1.2.3-i686-mingw32.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.2.3/avrocd-tools-1.2.3-i686-mingw32.tar.gz"
             }
           ]
         }

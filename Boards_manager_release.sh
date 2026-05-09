@@ -10,7 +10,7 @@
 
 # Change these to match your repo
 AUTHOR=SpenceKonde       # Github username
-REPOSITORY=tinyMegaCore # Github repo name
+REPOSITORY=megaTinyCore # Github repo name
 REPOWNER=felias-fogg # Repository owner (not necessarily author)
 PAOOWNER=felias-fogg # Github owner of PyAvrOCD
 
@@ -19,6 +19,8 @@ PAOVERSION=$1
 if [ -z "${PAOVERSION}" ]; then
     PAOVERSION=$(curl -s https://api.github.com/repos/$PAOOWNER/PyAvrOCD/releases/latest | grep "tag_name" |  awk -F\" '{print $4}')
 fi
+
+echo "PAOVERSION: ${PAOVERSION}"
 
 AVROCDVERSION=${PAOVERSION#"v"}
 
