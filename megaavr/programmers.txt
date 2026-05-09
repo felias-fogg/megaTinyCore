@@ -76,7 +76,7 @@ medbg.program.protocol=xplainedmini_updi
 medbg.program.tool=avrdude
 medbg.program.extra_params=-Pusb
 
-atmelice_updi.name=Atmel-ICE
+atmelice_updi.name=Atmel-ICE  (UPDI mode)
 atmelice_updi.communication=usb
 atmelice_updi.protocol=atmelice_updi
 atmelice_updi.program.protocol=jtagice3_updi
@@ -96,3 +96,17 @@ snap_updi.protocol=snap_updi
 snap_updi.program.protocol=jtagice3_updi
 snap_updi.program.tool=avrdude
 snap_updi.program.extra_params=-Pusb
+
+jtagice3_updi.name=JTAGICE3 (UPDI mode)
+jtagice3_updi.communication=usb
+jtagice3_updi.protocol=jtag3updi
+jtagice3_updi.program.protocol=jtag3updi
+jtagice3_updi.program.tool=avrdude
+jtagice3_updi.program.extra_params=
+
+atmel_powerdebugger_updi.name=Power Debugger (UPDI mode)
+atmel_powerdebugger_updi.communication=usb
+atmel_powerdebugger_updi.protocol=powerdebugger_updi
+atmel_powerdebugger_updi.program.protocol=powerdebugger_updi
+atmel_powerdebugger_updi.program.tool=avrdude
+atmel_powerdebugger_updi.program.extra_params=
