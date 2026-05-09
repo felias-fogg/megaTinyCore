@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "megaTinyCore",
+      "name": "megaTinyCore (Debug enabled)",
       "maintainer": "Spence Konde",
       "websiteURL": "https://github.com/SpenceKonde/megaTinyCore",
       "email": "",
