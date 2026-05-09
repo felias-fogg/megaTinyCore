@@ -1,0 +1,2994 @@
+{
+  "packages": [
+    {
+      "name": "megaTinyCore",
+      "maintainer": "Spence Konde",
+      "websiteURL": "https://github.com/SpenceKonde/megaTinyCore",
+      "email": "",
+      "help": {
+        "online": ""
+      },
+      "platforms": [
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.0.0.tar.gz",
+          "archiveFileName": "megaTinyCore-1.0.0.tar.gz",
+          "checksum": "SHA-256:87288464427e3c878a70a06a2b88e2f4dc40fc8d29e6e43d04f3bc300850a911",
+          "size": "912253",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino16"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.0.1",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.0.1.tar.gz",
+          "archiveFileName": "megaTinyCore-1.0.1.tar.gz",
+          "checksum": "SHA-256:a16cffad928e173ccb02f2af057a6449014b17a5b83e08133552f57e1e121a94",
+          "size": "8088593",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino16"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.0.2",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.0.2.tar.gz",
+          "archiveFileName": "megaTinyCore-1.0.2.tar.gz",
+          "checksum": "SHA-256:1d6584523e00f780a488026cffc7b028127861bd316ad4ca0fdd92a2b5e13cad",
+          "size": "8123830",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino16"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.0.3",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.0.3.tar.gz",
+          "archiveFileName": "megaTinyCore-1.0.3.tar.gz",
+          "checksum": "SHA-256:33bf921792d415b7798d58c98b045903ba94c1997b8e6da3581fb56cc34545c2",
+          "size": "7991244",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino16"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.0.4",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.0.4.tar.gz",
+          "archiveFileName": "megaTinyCore-1.0.4.tar.gz",
+          "checksum": "SHA-256:d7b46210fdab1cc62e39e7838086af5fdc337b5a68fdd69d3e9282a370bf3b98",
+          "size": "7992688",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.0.5",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.0.5.tar.gz",
+          "archiveFileName": "megaTinyCore-1.0.5.tar.gz",
+          "checksum": "SHA-256:9f9597271562d8c36d2baae40b7a5613fdb8adc9d5a696b95daed76166363081",
+          "size": "7997359",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.0.6",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.0.6.tar.gz",
+          "archiveFileName": "megaTinyCore-1.0.6.tar.gz",
+          "checksum": "SHA-256:df9b131a1123e295c2110b08ef5dd6480610fcecd12892544c2e188092b530b4",
+          "size": "8000372",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.0",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.0.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.0.tar.gz",
+          "checksum": "SHA-256:0c614daee0ab18a25884a9073579412271a2d5a3bd2561b007f5ab2afc3b744f",
+          "size": "7825444",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.0",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.0.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.0.tar.gz",
+          "checksum": "SHA-256:df9b131a1123e295c2110b08ef5dd6480610fcecd12892544c2e188092b530b4",
+          "size": "8000372",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.1",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.1.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.1.tar.gz",
+          "checksum": "SHA-256:ae3c23d24b89640943fbf236c0c50bd9c97d121712d3d9ebcdae161d33613a25",
+          "size": "7960235",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.2",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.2.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.2.tar.gz",
+          "checksum": "SHA-256:522f623ccdd5596d088d278167a5c3b5d03e613bf40a18b671201b468b3aad04",
+          "size": "7960919",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.3",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.3.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.3.tar.gz",
+          "checksum": "SHA-256:6c687c0d38bb5d4f1fc973fc97738fc3704fe5b4f46fac5e28b65958cab541be",
+          "size": "7966200",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.4",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.4.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.4.tar.gz",
+          "checksum": "SHA-256:d290876bacb196d8601d77cfc56020cae2b964621e29938578a4bd587c07c7b8",
+          "size": "7966200",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.5",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.5.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.5.tar.gz",
+          "checksum": "SHA-256:8eeb265f9fb0ecd5c09b9f5969217ca20e05971c954138c6fd3b0bd7a2fdf7e9",
+          "size": "7966200",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.6",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.6.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.6.tar.gz",
+          "checksum": "SHA-256:6d3063bc558010181e90bbaba4b3fcc9dac19ec873c0b1387dc54f6dd026e3e2",
+          "size": "7966200",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.7",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.7_.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.6.tar.gz",
+          "checksum": "SHA-256:46ccad64d0ac27dfbbf80f0fe9156b592b91a627ae2437d422927e9ec538bd11",
+          "size": "7976980",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.8",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.8.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.8.tar.gz",
+          "checksum": "SHA-256:35a13fb70e2c2d237cfe34b52c3da07e1ce73b437bc0e0902b09e13661386798",
+          "size": "7976996",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.9",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.9.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.9.tar.gz",
+          "checksum": "SHA-256:ac1fa4c7367f8a2a8ab2e616eb82de2986b2e96d77deae5ad37c2136c7aae02e",
+          "size": "7992135",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "1.1.10",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/1.1.10.tar.gz",
+          "archiveFileName": "megaTinyCore-1.1.10.tar.gz",
+          "checksum": "SHA-256:569e7673abf5329a59050b97b9f73d92908b74b3606eb3e41ae50fc4b1da5f5e",
+          "size": "7996915",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.0.0",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.0.0_boardmgr.tar.gz",
+          "archiveFileName": "megaTinyCore-2.0.0.tar.gz",
+          "checksum": "SHA-256:27d49f16863b71ea687be17dd7530867cea97df0c52553247f4d2fd2c550a4dc",
+          "size": "7998907",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.0.1",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.0.1.tar.gz",
+          "archiveFileName": "megaTinyCore-2.0.1.tar.gz",
+          "checksum": "SHA-256:613277a497f8edc87e7486207b4ae11d2718369aa10b02230ceabf7d8236d5fe",
+          "size": "8082211",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.0.2",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.0.2.tar.gz",
+          "archiveFileName": "megaTinyCore-2.0.1.tar.gz",
+          "checksum": "SHA-256:50f87f194181632b44fcb3c0c8e31af8790a9e3d343bc9ed4bce5011f8e586b8",
+          "size": "8002147",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.0.4",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.0.4.tar.gz",
+          "archiveFileName": "megaTinyCore-2.0.4.tar.gz",
+          "checksum": "SHA-256:2d18645f1e6248618d2038c7a5d42596a44306bb417e665b9dc417ba8c9dcf09",
+          "size": "8019760",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.0.5",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.0.5.tar.gz",
+          "archiveFileName": "megaTinyCore-2.0.5.tar.gz",
+          "checksum": "SHA-256:60c2629d98a89f3919a21809b884547cae4a5fdde8de711d9329d3d05d510fe8",
+          "size": "8023683",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.1.0",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.1.0.tar.gz",
+          "archiveFileName": "megaTinyCore-2.1.0.tar.gz",
+          "checksum": "SHA-256:62576666c0370fde787f6ab24590bd8f4c063bed68ad6a314945630397ebe915",
+          "size": "1514347",
+          "boards": [
+            {
+              "name": "BAD RELEASE - USE 2.1.3 INSTEAD  "
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.1.1",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.1.1.tar.gz",
+          "archiveFileName": "megaTinyCore-2.1.1.tar.gz",
+          "checksum": "SHA-256:88702414b8dedd3037de079d2ad231ec4a82b759a24a9a94ce03b7b700e9b62f",
+          "size": "1514400",
+          "boards": [
+            {
+              "name": "BAD RELEASE - USE 2.1.3 INSTEAD  "
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.1.2",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.1.2.tar.gz",
+          "archiveFileName": "megaTinyCore-2.1.2.tar.gz",
+          "checksum": "SHA-256:d77ac621dedd4eae0ef5618063f56c4a702ada9c0d1fe0c017d6b7707e81fe51",
+          "size": "1514403",
+          "boards": [
+            {
+              "name": "BAD RELEASE - USE 2.1.3 INSTEAD  "
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.1.3",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.1.3.tar.gz",
+          "archiveFileName": "megaTinyCore-2.1.3.tar.gz",
+          "checksum": "SHA-256:f84bc1193ccb233d68b09dc091f5cd3c9dade1d0592d9bbb2428fa0bb2f0242f",
+          "size": "1514688",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.1.4",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.1.4.tar.gz",
+          "archiveFileName": "megaTinyCore-2.1.4.tar.gz",
+          "checksum": "SHA-256:2925c6462823bd9505d114b65d7317a1fad04bdd19bc454815a0a3f5983f1b86",
+          "size": "377265",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.1.5",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/archive/2.1.5.tar.gz",
+          "archiveFileName": "megaTinyCore-2.1.5.tar.gz",
+          "checksum": "SHA-256:728c53c1fed60fa53610a4bbc180421000f00aefde2a838da3afd0f813d6ed16",
+          "size": "377216",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.2.0",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/releases/download/2.2.0-manual/megaTinyCore-2.2.0.tar.gz",
+          "archiveFileName": "megaTinyCore-2.2.0.tar.gz",
+          "checksum": "SHA-256:360537e4c4fe718b82666205badd6d5749a1f17c29621c34a4b07bbd1c34bc53",
+          "size": "741852",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.2.1",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/SpenceKonde/megaTinyCore/releases/download/2.2.1-manual/megaTinyCore-2.2.1.tar.gz",
+          "archiveFileName": "megaTinyCore-2.2.1.tar.gz",
+          "checksum": "SHA-256:93b7ccf038468da17320fdf255c6eb2e54f38edb46c9e9295fff7fa3cfdc4b9f",
+          "size": "741852",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807/417"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.2.2",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.2.2.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.2.2.tar.bz2",
+          "checksum": "SHA-256:44ee2c8ac3531e1582fed8c75437a7868a68412bd31fdda479069cf301c17f98",
+          "size": "573275",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.2.3",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.2.3.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.2.3.tar.bz2",
+          "checksum": "SHA-256:94fbe345d8b744fc7071da2860e2e4252175b8a404c64268fa15d7df1e927475",
+          "size": "573046",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.2.4",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.2.4.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.2.4.tar.bz2",
+          "checksum": "SHA-256:8d6fbf36413dbd3709f5206989e955ba187a1477394bdf3d8823a088760c6683",
+          "size": "577938",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.2.5",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.2.5.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.2.5.tar.bz2",
+          "checksum": "SHA-256:0dc0ed66603767c2654a49705d63b9d15511382027d5869a3664f7babcf4280a",
+          "size": "578257",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.2.6",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.2.6.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.2.6.tar.bz2",
+          "checksum": "SHA-256:70c1a880b33e518cf71450dea779460fa38de0b8960dc9ebe63e00047bed65f0",
+          "size": "579834",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.2.7",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.2.7.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.2.7.tar.bz2",
+          "checksum": "SHA-256:352fd2771212609860c3f68f21104cadcede1562090d25b72be2aa819476436a",
+          "size": "593430",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino3"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.2.8",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.2.8.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.2.8.tar.bz2",
+          "checksum": "SHA-256:3a630de17e597f92cbc4ffc3a76412b98837b944af998c1d5d8c8e5497cf918d",
+          "size": "538298",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino3"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.2.9",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.2.9.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.2.9.tar.bz2",
+          "checksum": "SHA-256:3db5706a68014d095cc000948c822c81ddec61b3a2f369022e2bf66de5cdfb37",
+          "size": "540164",
+          "boards": [
+            {
+              "name": "ATtiny3216/1616/1606/816/806/416/406"
+            },
+            {
+              "name": "ATtiny1614/1604/814/804/414/404/214/204"
+            },
+            {
+              "name": "ATtiny412/402/212/202"
+            },
+            {
+              "name": "ATtiny3217/1617/1607/817/807"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino3"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.3.0",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.3.0.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.3.0.tar.bz2",
+          "checksum": "SHA-256:27fdcbcf7a5d44754d20827ba6addbbf467e92d6b7d3fc1753a5217687cb65cd",
+          "size": "559054",
+          "boards": [
+            {
+              "name": "Initial support for new tinyAVR 2-series parts, with enhanced analog read functions to make use of the capabilities of the new hardware!  Use with caution, this may be buggier than usual... Be sure to check out the all new ADC section of the docs (click 'more info below') for info on the new analog functionality.<br/>"
+            },
+            {
+              "name": "24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>"
+            },
+            {
+              "name": "20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>"
+            },
+            {
+              "name": "14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>"
+            },
+            {
+              "name": "8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported only on 0/1-series currently."
+            },
+            {
+              "name": "2.3.1: No code changes, repack windows toolchain to resolve directory structure issue.<br/> 2.3.0: Initial 2-series release. No good on Windows, use 2.3.1.<br/> Version 2.2.9 is the stable version, with no 2-series support."
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4a"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.3.1",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.3.0.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.3.1.tar.bz2",
+          "checksum": "SHA-256:27fdcbcf7a5d44754d20827ba6addbbf467e92d6b7d3fc1753a5217687cb65cd",
+          "size": "559054",
+          "boards": [
+            {
+              "name": "Initial support for new tinyAVR 2-series parts, with enhanced analog read functions to make use of the capabilities of the new hardware!  Use with caution, this may be buggier than usual... Be sure to check out the all new ADC section of the docs (click 'more info below') for info on the new analog functionality.<br/>"
+            },
+            {
+              "name": "24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>"
+            },
+            {
+              "name": "20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>"
+            },
+            {
+              "name": "14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>"
+            },
+            {
+              "name": "8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported only on 0/1-series currently.<br/>"
+            },
+            {
+              "name": "2.3.1: No code changes, repack windows toolchain to resolve directory structure issue.<br/> 2.3.0: Initial 2-series release. No good on Windows, use 2.3.1.<br/> Version 2.2.9 is the stable version, with no 2-series support."
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.3.2",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.3.2.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.3.2.tar.bz2",
+          "checksum": "SHA-256:70e26f948719709a5d50629efc164b18132b35ec4ed6e7123a3bf483f5b1e0fe",
+          "size": "589658",
+          "boards": [
+            {
+              "name": "Initial support for new tinyAVR 2-series parts, with enhanced analog read functions to make use of the capabilities of the new hardware!  Use with caution, this may be buggier than usual... Be sure to check out the all new ADC section of the docs (click 'more info below') for info on the new analog functionality.<br/>"
+            },
+            {
+              "name": "24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>"
+            },
+            {
+              "name": "20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>"
+            },
+            {
+              "name": "14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>"
+            },
+            {
+              "name": "8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported only on 0/1-series currently.<br/>"
+            },
+            {
+              "name": "2.3.1: No code changes, repack windows toolchain to resolve directory structure issue.<br/> 2.3.0: Initial 2-series release. No good on Windows, use 2.3.1.<br/> Version 2.2.9 is the stable version, with no 2-series support."
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.4.0",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.4.0.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.4.0.tar.bz2",
+          "checksum": "SHA-256:2cb7d4908fe2f434d9756a617560a5023698223e1be886e584c4e705503638c0",
+          "size": "641595",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series! 2-series support is still very new, be sure to report any issues on github. The 2-series has a <b>super fancy</b> ADC; we have created analogReadEnh() (enhanced analogRead) and analogReadDiff() (differential analogRead) to expose this functionality; see the readme for more information.</br> "
+            },
+            {
+              "name": "24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>"
+            },
+            {
+              "name": "20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>"
+            },
+            {
+              "name": "14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>"
+            },
+            {
+              "name": "8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "2.4.0: Improved SerialUPDI compatibility, tuned internal oscillator (read: overclocking w/out external clock), openDrain()/pinConfigure() like DxCore, and countless major and minor bugfixes and improvements."
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.4.2",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.4.2.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.4.2.tar.bz2",
+          "checksum": "SHA-256:99d7d660b179dfb78b31367380601c5093f03e119f80bfd49242e45c5ecf5bae",
+          "size": "642510",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series! 2-series support is still very new, be sure to report any issues on github. The 2-series has a <b>super fancy</b> ADC; we have created analogReadEnh() (enhanced analogRead) and analogReadDiff() (differential analogRead) to expose this functionality; see the readme for more information.</br> "
+            },
+            {
+              "name": "24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>"
+            },
+            {
+              "name": "20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>"
+            },
+            {
+              "name": "14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>"
+            },
+            {
+              "name": "8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "2.4.2 - correct significant, emergent bugs that were considered critical. See changelog for details. <br/>2.4.0: Improved SerialUPDI compatibility, tuned internal oscillator (read: overclocking w/out external clock), openDrain()/pinConfigure() like DxCore, and countless major and minor bugfixes and improvements."
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.5.1",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.5.1.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.5.1.tar.bz2",
+          "checksum": "SHA-256:53d0f5dd009b4fc481de99fcf0c64de1d8841435e6ed87de2fda2f65715c99d0",
+          "size": "680671",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series! 2-series support is still very new.</br>\n        24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>\n        20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>\n        14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>\n        8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "2.5.1 has a critical bug that prevents bootloading. Use 2.5.2."
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.5.2",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.5.2.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.5.2.tar.bz2",
+          "checksum": "SHA-256:7ab63803553f0ed813198f5a7c72f0315f0b1d5ff6c0636ecc86208ee0aeff7c",
+          "size": "680785",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series! 2-series support is still very new.</br>\n        24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>\n        20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>\n        14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>\n        8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "Use 2.4.2 or 2.5.4 2.5.0 is A HUGE update, and versions 2.5.0~2.5.3 had critical issues impacting use of serial. New Wire implementation with master+slave support, improvements to serial including half-duplex support, a bunch of new features ported from DxCore and more! Be sure to check the documentation for the full details!"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.5.3",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.5.3.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.5.3.tar.bz2",
+          "checksum": "SHA-256:b23e88f16689691e8eedbc31262376e238837287470d74c8829d2b1f713da1db",
+          "size": "681330",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series! 2-series support is still very new.</br>\n        24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>\n        20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>\n        14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>\n        8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "Use 2.5.5 or 2.4.2. 2.5.0 is A HUGE update, and versions 2.5.0~2.5.4 had critical issues impacting use of serial. New Wire implementation with master+slave support, improvements to serial including half-duplex support, a bunch of new features ported from DxCore and more! Be sure to check the documentation for the full details!"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.5.4",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.5.4.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.5.4.tar.bz2",
+          "checksum": "SHA-256:6a0f9d01e7b1fb1da2fb590a3dc44dee492275526452c606b277c3b772430f60",
+          "size": "681598",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series! 2-series support is still very new.</br>\n        24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>\n        20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>\n        14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>\n        8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "Use 2.5.5 or 2.4.2. 2.5.0 is A HUGE update, and versions 2.5.0~2.5.4 had critical issues with some of the new systems. New Wire implementation with master+slave support, improvements to serial including half-duplex support, a bunch of new features ported from DxCore and more! Be sure to check the documentation for the full details!"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.5.5",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.5.5.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.5.5.tar.bz2",
+          "checksum": "SHA-256:929ad97c795b0deaedf4c46b8aa295c5cda506783e31f6e054bbcb74c1d8b681",
+          "size": "683511",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series! </br>\n        24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>\n        20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>\n        14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>\n        8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "Don't use 2.5.5 - one of the critical bugfixes was unsuccessful due to what appears to be an IDE bug, 2.5.6 works around this. 2.5.0 was simply a massive update, with a lot of big changes: New Wire implementation with master+slave support, improvements to serial including half-duplex support, a bunch of new features ported from DxCore and more! Be sure to check the documentation for the full details!"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.5.6",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.5.6.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.5.6.tar.bz2",
+          "checksum": "SHA-256:246e32ebe5641271333e569b23a5682908e81dab39baa9e148b5fdfb6fc79221",
+          "size": "687133",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series! </br>\n        24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>\n        20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>\n        14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>\n        8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "2.5.5 failed to fix a critical bug it was supposed to. This also offers additional options for SerialUPDI programming that should resolve some of the issues users have had at speeds above 57600 baud. 2.5.0 was simply a massive update, with a lot of big changes: New Wire implementation with master+slave support, improvements to serial including half-duplex support, a bunch of new features ported from DxCore and more! Be sure to check the documentation for the full details!"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.5.7",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.5.7.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.5.7.tar.bz2",
+          "checksum": "SHA-256:789f3a0953942baa263137a623d9065f0d4059fe57563fcfb25177688742021c",
+          "size": "690468",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!</br>\n        24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>\n        20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>\n        14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>\n        8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported (and optional) on all parts. <br/>"
+            },
+            {
+              "name": "2.5.7: This has a more graceful fix to the Wire buffer bug fixed in 2.5.5, fixes a bug reported with SerialUPDI which prevented standalone read (as opposed to verify) from working. This also fixed verbose mode and added tools -> programmer options for people who have problems running at anything but the slowest speed. Unlike previous 2.5.x, these bugs are not considered critical. 2.5.0: A HUGE update! New Wire implementation with master+slave support, improvements to serial including half-duplex support, a bunch of new features ported from DxCore and more! Be sure to check the documentation for the full details!"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.5.9",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.5.9.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.5.9.tar.bz2",
+          "checksum": "SHA-256:ac2b10a6101c23ee716c873f3d77a8eb6d572856c9fafef513d323c76f10d383",
+          "size": "690764",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series! Rejoice tinyAVR fans, for the 32k 2-series has arrived, and... is actally about the only kind you can get... </br>\n        24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>\n        20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>\n        14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>\n        8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "2.5.9: The attempted linux fix broke installation due to a boneheaded error in the json file. 2.5.9 changes no code but corrects the json entry. 2.5.8: Fix critical bug impacting non-windows users who were not using Optiboot. Also pulls in further improvement to the same area of the Wire buffer, and fixes support for 32-bit x86 linux. <br/> 2.5.7: This has a more graceful fix to the Wire buffer bug fixed in 2.5.5, fixes a bug reported with SerialUPDI which prevented standalone read (as opposed to verify) from working. This also fixed verbose mode and added tools -> programmer options for people who have problems running at anything but the slowest speed. Unlike previous 2.5.x, these bugs are not considered critical.<br/> 2.5.0: A HUGE update! New Wire implementation with master+slave support, improvements to serial including half-duplex support, a bunch of new features ported from DxCore and more! Be sure to check the documentation for the full details!"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.5.10",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.5.10.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.5.10.tar.bz2",
+          "checksum": "SHA-256:81e8168c645770b5bf9526859f08029c483df11bbddedf881c8883fb0d96488b",
+          "size": "691071",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series! Rejoice tinyAVR fans, for the 32k 2-series has arrived, and... is actally about the only kind you can get... </br>\n        24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>\n        20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>\n        14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>\n        8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "<s>2.5.10 fixes yet another critical bug, this time with attachInterrupt.</s> 2.5.10 does not fix attachInterrupt, but 2.5.11 should. <br/> 2.5.0: A HUGE update! New Wire implementation with master+slave support, improvements to serial including half-duplex support, a bunch of new features ported from DxCore and more! Be sure to check the documentation for the full details!"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.5.11",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.5.11.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.5.11.tar.bz2",
+          "checksum": "SHA-256:f16d8e9b758a950f6c5a56d20c86ad964ab3da37bcc3458a3c3bdccb95805bfd",
+          "size": "699801",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!</br>\n        24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/>\n        20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/>\n        14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/>\n        8-pin parts: ATtiny412/402/212/202<br/>"
+            },
+            {
+              "name": "Optiboot serial bootloader supported on all parts. <br/>"
+            },
+            {
+              "name": "2.5.11 corrects a critical defect in the new attachInterrupt implementation and reduces binary size when the SPI.h library is used, as well as several other small fixes. <br/> 2.5.0: A HUGE update! New Wire implementation with master+slave support, improvements to serial including half-duplex support, a bunch of new features ported from DxCore and more! Be sure to check the documentation for the full details!"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino4b"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.0",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.0.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.0.tar.bz2",
+          "checksum": "SHA-256:adc1e96f602166a06fd8982220aa56fcf0722ed066738ff1d3eb9deb2d0f1ea0",
+          "size": "747260",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/>"
+            },
+            {
+              "name": "<b>But don't try to use 2.6.0</b> (not that you can - we have withdrawn it because the volume of inquiries and issues and complaints would have interfered with fixing the problems. <br/> It was an unmitigated disaster. 2.6.1 should be out by the time you read this."
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino5"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.1",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.1.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.1.tar.bz2",
+          "checksum": "SHA-256:af26dce42c8e2802f83ab018e59699612e0c52a9599f3bd5ee77af8caabe39b4",
+          "size": "778420",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.6.1 corrects the critical issues with 2.6.0. contains a large number of fixes and enhancements. Wire wake as slave and Serial SFD should work (see Wire library readme and Ref_Serial), and there is now a <br/> way to do serial autobaud. Also, major fixes to Event for 0/1-series, SPI, SerialUPDI on linux, and enhancements to analog functionality on 1-series, and to Logic and <br/> Comparator libraries to support manually defined interrupts <br/> Oh, and despite the added features, serial still uses dramatically less flash! (about 500 bytes, so those working on 4k (or 2k) parts have real reason to celebrate).<br/> Note: Expect longer download than usual, as this also updates to latest ATpacks with the Azduino5 toolchain package."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino6"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.2",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.2.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.2.tar.bz2",
+          "checksum": "SHA-256:7bd78f7e0aaa722cbbd34cae48178062824b97e6bbb3db285163fcc93131e4f6",
+          "size": "800797",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.6.2 contains fix for 'burn bootloader' issue, waking from sleep as a Wire slave, half-duplex serial, and more."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino5"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.3",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.3.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.3.tar.bz2",
+          "checksum": "SHA-256:de57302c1202b224bb0f58693fd5bd963f3992c368829f4979d7ce80ac238de4",
+          "size": "801981",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.6.3 contains fix for burn bootloader issue, waking from sleep as a Wire slave, half-duplex serial, and more, and corrects an issue with installation of 2.6.2"
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino6"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.4",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.4.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.4.tar.bz2",
+          "checksum": "SHA-256:7610ca633544d731aa0504aa6b019354e022b2e6160a3ba5b6b0f556c4610b42",
+          "size": "804012",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.6.3 was a bad release, 2.6.4 should resolve the issues with compiling most sketches under that version. It also adds the option to use the WDT fuse, and of course has the fixes from 2.6.0-2.6.3, waking from sleep as a Wire slave, half-duplex serial, and more, and corrects an issue with installation of 2.6.2"
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino6"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.5",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.5.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.5.tar.bz2",
+          "checksum": "SHA-256:e3674bf4b03eb9c67c971ecaeb0dfd04397a99dde793ca3cce113332df46c0be",
+          "size": "806421",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.6.5 corrects a number of small, mostly minor issues. Reorders the list of chips now that all sizes of all families are shipping, adds new bootloader entry conditions and a menu to tweak optimization settings, but nothing particularly big."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino6"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.7",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.7.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.7.tar.bz2",
+          "checksum": "SHA-256:2282cbf834346b055d24c4a6c90a0f8c9ba1d58984619a7cb34491062715782b",
+          "size": "818325",
+          "boards": [
+            {
+              "name": "This is a critical bugfix release that I thought went out weeks ago, and a  new feature that I had developed in the meantime: A tools menu to choose the pwm pins. This also comes with a bunch of minor fixes"
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino6"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.8",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.8.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.8.tar.bz2",
+          "checksum": "SHA-256:33c6c68f5f5dfff1de02113c968ad08dabc2cedddd78b1f9b004d91e0183de9f",
+          "size": "827571",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.6.8 corrects some critical issues with the PWM mapping menu and compilation for some supported boards and fixes some issues with tinyNeoPixel."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino6"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.9",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.9.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.9.tar.bz2",
+          "checksum": "SHA-256:56e7857020ce6595a9290434426cf46073832f8c7fe04c63ff1717cc342b823a",
+          "size": "950444",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.6.9 correctly handles a few situations, and corrects the bootloader binaries, updates the toolchain to fix two relatively minor issues."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.10",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.10.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.10.tar.bz2",
+          "checksum": "SHA-256:62703a44f94a8033faac2f5283e3fe708d65a7cd5e1db8dd17edfaddee96f5da",
+          "size": "993438",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.6.10 is a critical bugfix to 2.6.9. This also pulls in the fix for missing constants for ADCPowerOptions(), and board manager installations no longer elide the text portions of the documentation."
+            },
+            {
+              "name": "2.6.9 was largely a bugfix release, fixing the bootloaders (reburn bootloader if using optiboot if having entry condition issues, older versions with the new entry condition options had bad bootloader binaries that ignored the requested entry conditions.</br> 2.6.8 and older should not be used."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b1"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore",
+          "architecture": "megaavr",
+          "version": "2.6.11",
+          "category": "Contributed",
+          "url": "https://SpenceKonde.github.io/megaTinyCore/megaTinyCore-2.6.11.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.6.11.tar.bz2",
+          "checksum": "SHA-256:1a2b5827777aa4c61ac5d9e96cf4ad9ebb34a2171a97288349df8eb61636cfb1",
+          "size": "1396653",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.6.10 is a critical bugfix to 2.6.9. This also pulls in the fix for missing constants for ADCPowerOptions(), and board manager installations no longer elide the text portions of the documentation."
+            },
+            {
+              "name": "2.6.9 was largely a bugfix release, fixing the bootloaders (reburn bootloader if using optiboot if having entry condition issues, older versions with the new entry condition options had bad bootloader binaries that ignored the requested entry conditions.</br> 2.6.8 and older should not be used."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE and PICkit4 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b1"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "version": "3.7.2-post1",
+              "name": "python3"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "version": "3.7.2-post1",
+          "name": "python3",
+          "systems": [
+            {
+              "host": "x86_64-mingw32",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-3.7.2.post1-embed-win32v2a.zip",
+              "archiveFileName": "python3-3.7.2.post1-embed-win32v2a.zip",
+              "checksum": "SHA-256:f57cb2daf86176d2929e7c58990c2ac32554e3219d454dcac10e464ddda35bf2",
+              "size": "6428926"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-3.7.2.post1-embed-win32v2a.zip",
+              "archiveFileName": "python3-3.7.2.post1-embed-win32va2.zip",
+              "checksum": "SHA-256:f57cb2daf86176d2929e7c58990c2ac32554e3219d454dcac10e464ddda35bf2",
+              "size": "6428926"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+              "size": "292"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+              "size": "292"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+              "size": "292"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-macosx-portable.tar.gz",
+              "archiveFileName": "python3-macosx-portable.tar.gz",
+              "checksum": "SHA-256:01a5bf1fa264c6f04cfaadf4c6e9f6caaacb6833ef40104dfbe953fcdb9bca1c",
+              "size": "25494144"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+              "size": "292"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
