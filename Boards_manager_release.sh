@@ -98,7 +98,7 @@ jq -r                                   \
 '.packages[].platforms[.packages[].platforms | length] |= . +
 {
   "name": $repository,
-  "architecture": "megaavr",
+  "architecture": "megaavr (Debug enabled)",
   "version": $version,
   "category": "Contributed",
   "url": $url,
