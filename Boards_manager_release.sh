@@ -97,8 +97,8 @@ jq -r                                   \
 --arg file_name  $REPOSITORY-${DOWNLOADED_FILE#"v"}.tar.bz2  \
 '.packages[].platforms[.packages[].platforms | length] |= . +
 {
-  "name": $repository,
-  "architecture": "megaavr (Debug enabled)",
+  "name": "megaTinyCore (Debug enabled)",
+  "architecture": "megaavr",
   "version": $version,
   "category": "Contributed",
   "url": $url,
