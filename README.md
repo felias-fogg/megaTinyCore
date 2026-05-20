@@ -1,5 +1,13 @@
 <!-- markdownlint-disable MD041 -->
 # megaTinyCore (sometimes "mTC" informally) - Arduino support for all tinyAVR 0/1/2-Series
+
+------
+
+**This is a fork of megaTinyCore supporting debugging in the Arduino IDE 2 (and elsewhere) by means of [PyAvrOCD](https://pyavrocd.io). 
+
+------
+
+
 ## [Questions? Cases where you don't know whether the problem is in your code or the core? Things to show off?](https://github.com/SpenceKonde/megaTinyCore/discussions)
 We have a Github Discussions section now. When a problem is *definitely* a defect in the core, you will reduce the time taken to fix it if you create an issue, as I prioritize issues over catching up on discussions.
 
