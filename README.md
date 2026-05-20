@@ -3,7 +3,7 @@
 
 ------
 
-**This is a fork of megaTinyCore supporting debugging in the Arduino IDE 2 (and elsewhere) by means of [PyAvrOCD](https://pyavrocd.io). 
+**This is a fork of megaTinyCore supporting debugging in the Arduino IDE 2 (and elsewhere) by means of [PyAvrOCD](https://pyavrocd.io).**
 
 ------
 
