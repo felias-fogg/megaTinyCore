@@ -3,7 +3,13 @@
 
 ------
 
-**This is a fork of megaTinyCore supporting debugging in the Arduino IDE 2 (and elsewhere) by means of [PyAvrOCD](https://pyavrocd.io).**
+**This is a fork of megaTinyCore supporting debugging in the Arduino IDE 2 (and elsewhere) by means of [PyAvrOCD](https://pyavrocd.io). If you want to use it, add the following board manager URL and then update the package version:**
+
+```
+https://felias-fogg.github.io/megaTinyCore/package_SpenceKonde_megaTinyCore_index.json
+```
+
+
 
 ------
 
