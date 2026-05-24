@@ -2969,7 +2969,7 @@
               "size": "292"
             },
             {
-              "host": "i686-pc-linux-gnu",
+              "host": "i686-linux-gnu",
               "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
               "archiveFileName": "python3-via-env.tar.gz",
               "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
@@ -2983,7 +2983,7 @@
               "size": "25494144"
             },
             {
-              "host": "x86_64-pc-linux-gnu",
+              "host": "x86_64-linux-gnu",
               "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
               "archiveFileName": "python3-via-env.tar.gz",
               "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
