@@ -16,7 +16,7 @@ version={versionnum.major}.{versionnum.minor}.{versionnum.patch}{versionnum.post
 # Stupid workaround #
 # for IDE bug       #
 #####################
-version=2.7.0-pre4
+version=2.7.0-pre5
 
 build.versiondefines=-DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} -DMEGATINYCORE="{version}" -DMEGATINYCORE_MAJOR={versionnum.major}UL -DMEGATINYCORE_MINOR={versionnum.minor}UL -DMEGATINYCORE_PATCH={versionnum.patch}UL -DMEGATINYCORE_RELEASED={versionnum.released}
 
@@ -251,9 +251,15 @@ tools.serialupdi.program.pattern={upload.prog_interlock}"{cmd}" -u "{runtime.pla
 
 # Debugger configuration (general options)
 # ----------------------------------------
+# The debug tools (PyAvrOCD, avr-gdb, simavr and the SVD files) come from the
+# AvrDebugger package, which every debug-configured core shares. When it is
+# installed, the IDE sets runtime.tools.avr-debugger.path itself and this line
+# is overridden. When it is not, the path leads to the fallback stubs from
+# AvrDebugger, which say in the gdb-server terminal what to install.
+runtime.tools.avr-debugger.path={runtime.platform.path}/debugger/fallback
 debug.executable={build.path}/{build.project_name}.elf
 debug.toolchain=gcc
-debug.toolchain.path={runtime.tools.avrocd-tools.path}
+debug.toolchain.path={runtime.tools.avr-debugger.path}/bin
 
 debug.server=openocd
 debug.server.openocd.path={debug.toolchain.path}/pyavrocd
@@ -262,16 +268,18 @@ debug.server.openocd.script=nix
 debug.cortex-debug.custom.gdbPath={debug.toolchain.path}/avr-gdb
 debug.cortex-debug.custom.overrideGDBServerStartedRegex=Listening on port \d+ for gdb connection
 debug.cortex-debug.custom.objdumpPath={runtime.tools.avr-gcc.path}/bin/avr-objdump
-debug.cortex-debug.custom.serverArgs.0=-s
-debug.cortex-debug.custom.serverArgs.1=nop
-debug.cortex-debug.custom.serverArgs.2=--device
-debug.cortex-debug.custom.serverArgs.3={build.mcu}
-debug.cortex-debug.custom.serverArgs.4=--manage
-debug.cortex-debug.custom.serverArgs.5=all
-debug.cortex-debug.custom.serverArgs.6=--F_CPU
-debug.cortex-debug.custom.serverArgs.7={build.f_cpu}
-debug.cortex-debug.custom.serverArgs.8=--elf-file
-debug.cortex-debug.custom.serverArgs.9={debug.executable}
+# Two-digit indices: the keys are sorted as strings
+debug.cortex-debug.custom.serverArgs.00=-s
+debug.cortex-debug.custom.serverArgs.01=nop
+debug.cortex-debug.custom.serverArgs.02=--device
+debug.cortex-debug.custom.serverArgs.03={build.mcu}
+debug.cortex-debug.custom.serverArgs.04=--manage
+debug.cortex-debug.custom.serverArgs.05=all
+debug.cortex-debug.custom.serverArgs.06=--F_CPU
+debug.cortex-debug.custom.serverArgs.07={build.f_cpu}
+debug.cortex-debug.custom.serverArgs.08=--elf-file
+debug.cortex-debug.custom.serverArgs.09={debug.executable}
+debug.cortex-debug.custom.serverArgs.10=--arduino-ide
 
 debug.cortex-debug.custom.runToEntryPoint=main
-debug.svd_file={debug.toolchain.path}/pyavrocd-util/svd/{build.mcu}.svd
+debug.svd_file={runtime.tools.avr-debugger.path}/svd/{build.mcu}.svd

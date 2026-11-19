@@ -26,6 +26,11 @@ The 2.6.11 release is pending, following that the next version will by 2.7.0, ba
 
 ## Released Versions
 
+### 2.7.0 (pre-releases of the debug-configured fork felias-fogg/megaTinyCore)
+* 2.7.0-pre5: The core is *debug-configured*: the debug tools (PyAvrOCD, avr-gdb, the SVD files) come from the AvrDebugger package, which has to be installed in addition; the core no longer installs its own copy (avrocd-tools). The GDB server is started with `--arduino-ide`. When AvrDebugger is missing, clicking `Debug` brings up the gdb-server terminal, which says what to install; the stubs that do this are in `debugger/fallback/bin`, from AvrDebugger 0.2.0. Releases are now made by a workflow.
+* 2.7.0-pre4: Can be installed stand-alone and uses avrdude 8.1.
+* 2.7.0-pre3: The first version with debugging in the Arduino IDE 2, through PyAvrOCD.
+
 ### 2.6.11 (release pending)
 * New toolchain version.
 * Make wiring.c have the functions referred to in the doc.

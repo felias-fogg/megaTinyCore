@@ -9,6 +9,14 @@
 https://felias-fogg.github.io/megaTinyCore/package_SpenceKonde_megaTinyCore_index.json
 ```
 
+**Since version 2.7.0-pre5, the fork is *debug-configured*: the debug tools (PyAvrOCD, avr-gdb and the SVD files) come from the AvrDebugger package, which has to be installed in addition. Add the following URL as well, and install AvrDebugger in the `Board Manager`:**
+
+```
+https://felias-fogg.github.io/AvrDebugger/package_felias-fogg_AvrDebugger_index.json
+```
+
+**If you click `Debug` without it, the IDE says so in its gdb-server terminal.**
+
 
 
 ------
