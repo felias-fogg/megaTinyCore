@@ -1,0 +1,619 @@
+{
+  "packages": [
+    {
+      "name": "megaTinyCore",
+      "maintainer": "Spence Konde",
+      "websiteURL": "https://github.com/SpenceKonde/megaTinyCore",
+      "email": "",
+      "help": {
+        "online": ""
+      },
+      "platforms": [
+        {
+          "name": "megaTinyCore (Debug enabled)",
+          "architecture": "megaavr",
+          "version": "2.7.0-pre3",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/megaTinyCore/megaTinyCore-2.7.0-pre3.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.7.0-pre3.tar.bz2",
+          "checksum": "SHA-256:66900e7c91e2e3be8139798f467a12dad0970f88a07aa1efaa91ed13899dd063",
+          "size": "11821454",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.7.0-pre3 is the first experimental version to include the debug capability"
+            },
+            {
+              "name": "2.6.10 is a critical bugfix to 2.6.9. This also pulls in the fix for missing constants for ADCPowerOptions(), and board manager installations no longer elide the text portions of the documentation."
+            },
+            {
+              "name": "2.6.9 was largely a bugfix release, fixing the bootloaders (reburn bootloader if using optiboot if having entry condition issues, older versions with the new entry condition options had bad bootloader binaries that ignored the requested entry conditions.</br> 2.6.8 and older should not be used."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE, PICkit4, Power Debugger, and JTAGICE3 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "DxCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b1"
+            },
+            {
+              "packager": "DxCore",
+              "name": "avrdude",
+              "version": "6.3.0-arduino17or18"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "name": "avrocd-tools",
+              "version": "1.3.2"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore (Debug enabled)",
+          "architecture": "megaavr",
+          "version": "2.7.0-pre4",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/megaTinyCore/megaTinyCore-2.7.0-pre4.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.7.0-pre4.tar.bz2",
+          "checksum": "SHA-256:1aff94420d3673c3bd2a24adcdec670b2a0451b79bd9638f222b835fc0c86d08",
+          "size": "11820305",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.7.0-pre3 was the first experimental version to include the debug capability. 2.7.0-pre4 can be installed stand-alone and uses avrdude 8.0."
+            },
+            {
+              "name": "2.6.10 is a critical bugfix to 2.6.9. This also pulls in the fix for missing constants for ADCPowerOptions(), and board manager installations no longer elide the text portions of the documentation."
+            },
+            {
+              "name": "2.6.9 was largely a bugfix release, fixing the bootloaders (reburn bootloader if using optiboot if having entry condition issues, older versions with the new entry condition options had bad bootloader binaries that ignored the requested entry conditions.</br> 2.6.8 and older should not be used."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE, PICkit4, Power Debugger, and JTAGICE3 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "megaTinyCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b1"
+            },
+            {
+              "packager": "megaTinyCore",
+              "name": "avrdude",
+              "version": "avrdude_v8.1-released"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "name": "avrocd-tools",
+              "version": "1.4.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore (debug-configured)",
+          "architecture": "megaavr",
+          "version": "2.7.0-pre5",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/megaTinyCore/megaTinyCore-2.7.0-pre5.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.7.0-pre5.tar.bz2",
+          "checksum": "SHA-256:4a0470bb50846bae85bff0423e0cf387740dc224cf230acb6089816cfc448408",
+          "size": "11799061",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.7.0-pre3 was the first experimental version to include the debug capability. 2.7.0-pre4 can be installed stand-alone and uses avrdude 8.1. Since 2.7.0-pre5, the debug tools come from the AvrDebugger package, which has to be installed in addition."
+            },
+            {
+              "name": "2.6.10 is a critical bugfix to 2.6.9. This also pulls in the fix for missing constants for ADCPowerOptions(), and board manager installations no longer elide the text portions of the documentation."
+            },
+            {
+              "name": "2.6.9 was largely a bugfix release, fixing the bootloaders (reburn bootloader if using optiboot if having entry condition issues, older versions with the new entry condition options had bad bootloader binaries that ignored the requested entry conditions.</br> 2.6.8 and older should not be used."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE, PICkit4, Power Debugger, and JTAGICE3 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "megaTinyCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b1"
+            },
+            {
+              "packager": "megaTinyCore",
+              "name": "avrdude",
+              "version": "avrdude_v8.1-released"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore (debug-configured)",
+          "architecture": "megaavr",
+          "version": "2.7.0-pre6",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/megaTinyCore/megaTinyCore-2.7.0-pre6.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.7.0-pre6.tar.bz2",
+          "checksum": "SHA-256:2af83e977310c137364dc40e3a608fcb6f28b9e8aac464008ab412e37d50254d",
+          "size": "11815623",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.7.0-pre3 was the first experimental version to include the debug capability. 2.7.0-pre4 can be installed stand-alone and uses avrdude 8.1. Since 2.7.0-pre5, the debug tools come from the AvrDebugger package, which has to be installed in addition."
+            },
+            {
+              "name": "2.6.10 is a critical bugfix to 2.6.9. This also pulls in the fix for missing constants for ADCPowerOptions(), and board manager installations no longer elide the text portions of the documentation."
+            },
+            {
+              "name": "2.6.9 was largely a bugfix release, fixing the bootloaders (reburn bootloader if using optiboot if having entry condition issues, older versions with the new entry condition options had bad bootloader binaries that ignored the requested entry conditions.</br> 2.6.8 and older should not be used."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE, PICkit4, Power Debugger, and JTAGICE3 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "megaTinyCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b1"
+            },
+            {
+              "packager": "megaTinyCore",
+              "name": "avrdude",
+              "version": "8.3"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore (debug-configured)",
+          "architecture": "megaavr",
+          "version": "2.7.0-pre7",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/megaTinyCore/megaTinyCore-2.7.0-pre7.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.7.0-pre7.tar.bz2",
+          "checksum": "SHA-256:3f51d490d7c552dfa73a1b38ada694bb303566b3f626622222ced416d58dca19",
+          "size": "11792159",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.7.0-pre3 was the first experimental version to include the debug capability. 2.7.0-pre4 can be installed stand-alone and uses avrdude 8.1. Since 2.7.0-pre5, the debug tools come from the AvrDebugger package, which has to be installed in addition."
+            },
+            {
+              "name": "2.6.10 is a critical bugfix to 2.6.9. This also pulls in the fix for missing constants for ADCPowerOptions(), and board manager installations no longer elide the text portions of the documentation."
+            },
+            {
+              "name": "2.6.9 was largely a bugfix release, fixing the bootloaders (reburn bootloader if using optiboot if having entry condition issues, older versions with the new entry condition options had bad bootloader binaries that ignored the requested entry conditions.</br> 2.6.8 and older should not be used."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE, PICkit4, Power Debugger, and JTAGICE3 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "megaTinyCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b1"
+            },
+            {
+              "packager": "megaTinyCore",
+              "name": "avrdude",
+              "version": "8.3"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            }
+          ]
+        },
+        {
+          "name": "megaTinyCore (debug-configured)",
+          "architecture": "megaavr",
+          "version": "2.7.0-pre8-rc1",
+          "category": "Contributed",
+          "url": "https://felias-fogg.github.io/megaTinyCore/megaTinyCore-2.7.0-pre8-rc1.tar.bz2",
+          "archiveFileName": "megaTinyCore-2.7.0-pre8-rc1.tar.bz2",
+          "checksum": "SHA-256:fad4358cd7badbbdbb275d10543c20be0f379a782aeab2e49872b5e864947443",
+          "size": "11816781",
+          "boards": [
+            {
+              "name": "Full Arduino support for the tinyAVR 0-series, 1-series, and the new 2-series!<br/> 24-pin parts: ATtiny3227/3217/1627/1617/1607/827/817/807/427<br/> 20-pin parts: ATtiny3226/3216/1626/1616/1606/826/816/806/426/416/406<br/> 14-pin parts: ATtiny3224/1624/1614/1604/824/814/804/424/414/404/214/204<br/> 8-pin parts: ATtiny412/402/212/202<br/> Microchip Boards: Curiosity Nano 3217/1627/1607 and Xplained Pro (3217/817), Mini (817) Nano (416). Direct USB uploads may not work on linux, but you can export hex and <br/> upload through the mass storage projection."
+            },
+            {
+              "name": "2.7.0-pre3 was the first experimental version to include the debug capability. 2.7.0-pre4 can be installed stand-alone and uses avrdude 8.1. Since 2.7.0-pre5, the debug tools come from the AvrDebugger package, which has to be installed in addition."
+            },
+            {
+              "name": "2.6.10 is a critical bugfix to 2.6.9. This also pulls in the fix for missing constants for ADCPowerOptions(), and board manager installations no longer elide the text portions of the documentation."
+            },
+            {
+              "name": "2.6.9 was largely a bugfix release, fixing the bootloaders (reburn bootloader if using optiboot if having entry condition issues, older versions with the new entry condition options had bad bootloader binaries that ignored the requested entry conditions.</br> 2.6.8 and older should not be used."
+            },
+            {
+              "name": "Supported UPDI programmers: SerialUPDI (serial adapter w/diode or resistor), jtag2updi, nEDBG, mEDBG, EDBG, SNAP, Atmel-ICE, PICkit4, Power Debugger, and JTAGICE3 - or use one of those to load<br/> the Optiboot serial bootloader (included) for serial programming. Which programing method makes more sense depends on your application and requirements. <br/><br/> The full documentation is not included with board manager installations (it is hard to find and the images bloat the download); we recommend viewing it through github at the link above<br/> or if it must be read withouht an internet connection by downaloding the manual installation package"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "megaTinyCore",
+              "name": "avr-gcc",
+              "version": "7.3.0-atmel3.6.1-azduino7b1"
+            },
+            {
+              "packager": "megaTinyCore",
+              "name": "avrdude",
+              "version": "8.3"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.3.0"
+            },
+            {
+              "packager": "megaTinyCore",
+              "name": "python3",
+              "version": "3.7.2-post1"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "version": "3.7.2-post1",
+          "name": "python3",
+          "systems": [
+            {
+              "host": "x86_64-mingw32",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-3.7.2.post1-embed-win32v2a.zip",
+              "archiveFileName": "python3-3.7.2.post1-embed-win32v2a.zip",
+              "checksum": "SHA-256:f57cb2daf86176d2929e7c58990c2ac32554e3219d454dcac10e464ddda35bf2",
+              "size": "6428926"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-3.7.2.post1-embed-win32v2a.zip",
+              "archiveFileName": "python3-3.7.2.post1-embed-win32va2.zip",
+              "checksum": "SHA-256:f57cb2daf86176d2929e7c58990c2ac32554e3219d454dcac10e464ddda35bf2",
+              "size": "6428926"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+              "size": "292"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+              "size": "292"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+              "size": "292"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-macosx-portable.tar.gz",
+              "archiveFileName": "python3-macosx-portable.tar.gz",
+              "checksum": "SHA-256:01a5bf1fa264c6f04cfaadf4c6e9f6caaacb6833ef40104dfbe953fcdb9bca1c",
+              "size": "25494144"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "https://github.com/earlephilhower/esp-quick-toolchain/releases/download/2.5.0-4/python3-via-env.tar.gz",
+              "archiveFileName": "python3-via-env.tar.gz",
+              "checksum": "SHA-256:c9237bfe0f62842d7187a39495baa4a7e3ab8b87c0b433614294b023cf0bc0f3",
+              "size": "292"
+            }
+          ]
+        },
+        {
+          "name": "avr-gcc",
+          "version": "7.3.0-atmel3.6.1-azduino7b1",
+          "systems": [
+            {
+              "size": "38113733",
+              "checksum": "SHA-256:936e74042f77da04b54723a2f34cf541f02c076d47dba0325f4ccfa3b93650a3",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-azduino7b-aarch64-pc-linux.tar.bz2",
+              "url": "https://spencekondetoolchains.s3.amazonaws.com/avr-gcc-7.3.0-atmel3.6.1-azduino7b-aarch64-pc-linux.tar.bz2"
+            },
+            {
+              "size": "34736688",
+              "checksum": "SHA-256:326eed20d14ad28807f2b0e355f79f2570a448073d706e66cfc9a52e20b5b8eb",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-azduino7b-arm-linux-gnueabihf.tar.bz2",
+              "url": "https://spencekondetoolchains.s3.amazonaws.com/avr-gcc-7.3.0-atmel3.6.1-azduino7b-arm-linux-gnueabihf.tar.bz2"
+            },
+            {
+              "size": "37307286",
+              "checksum": "SHA-256:0c448287cd340966f74db9469e8de00ceff49b08d6909568edf64a881a9ac72b",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-azduino7b-i686-pc-linux.tar.bz2",
+              "url": "https://spencekondetoolchains.s3.amazonaws.com/avr-gcc-7.3.0-atmel3.6.1-azduino7b-i686-pc-linux.tar.bz2"
+            },
+            {
+              "size": "37926737",
+              "checksum": "SHA-256:c49b00ec3cf91136944188547696fe93558b20d8e852882b259331f2aacaadde",
+              "host": "x86_64-apple-darwin14",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-azduino7b-x86_64-apple-darwin14.tar.bz2",
+              "url": "https://spencekondetoolchains.s3.amazonaws.com/avr-gcc-7.3.0-atmel3.6.1-azduino7b-x86_64-apple-darwin14.tar.bz2"
+            },
+            {
+              "size": "37967368",
+              "checksum": "SHA-256:0d4cd92e17c639f5881f784af4ea030765c2a93a2debd42a59710b71c9967512",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-azduino7b-x86_64-pc-linux-gnu.tar.bz2",
+              "url": "https://github.com/SpenceKonde/DxCore/raw/gh-pages/avr-gcc-7.3.0-atmel3.6.1-azduino7b-x86_64-pc-linux-gnu.tar.bz2"
+            },
+            {
+              "size": "41622998",
+              "checksum": "SHA-256:d8103298edc77339c3736077df61ba63ca7501ac88d72a916a794904497da295",
+              "host": "i686-w64-mingw32",
+              "archiveFileName": "avr-gcc-7.3.0-atmel3.6.1-azduino7b-i686-w64-mingw32.tar.bz2",
+              "url": "https://spencekondetoolchains.s3.amazonaws.com/avr-gcc-7.3.0-atmel3.6.1-azduino7b-i686-w64-mingw32.tar.bz2"
+            }
+          ]
+        },
+        {
+          "name": "avrdude",
+          "version": "avrdude_v8.1-released",
+          "systems": [
+            {
+              "size": "3633265",
+              "checksum": "SHA-256:174343ea5c4c3b0d29e98eb4c8de44e0f075a407fded755a1b7fcf793909d1da",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avrdude_v8.1_Linux_ARMv6.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.1/avrdude_v8.1_Linux_ARMv6.tar.gz"
+            },
+            {
+              "size": "3775587",
+              "checksum": "SHA-256:9e1f2c1e7988bac93f30e5e8aea6cd7a9c8e782542f4d93dc04b6495820184d8",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avrdude_v8.1_Linux_ARM64.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.1/avrdude_v8.1_Linux_ARM64.tar.gz"
+            },
+            {
+              "size": "3331581",
+              "checksum": "SHA-256:d7739fbb5d1fe649511121a695dac3f4ca5ccb348919bf1f45f9bc5a2ea0ce72",
+              "host": "x86_64-apple-darwin12",
+              "archiveFileName": "avrdude_v8.1_macOS_64bit.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.1/avrdude_v8.1_macOS_64bit.tar.gz"
+            },
+            {
+              "size": "3705519",
+              "checksum": "SHA-256:c751c88b1c0b886834d85cd4b19f100cc3415c896ab9f98cf7e2955edbcd678f",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avrdude_v8.1_Linux_64bit.tar.gz",
+              "url": "https://github.com//avrdudes/avrdude/releases/download/v8.1/avrdude_v8.1_Linux_64bit.tar.gz"
+            },
+            {
+              "size": "3662393",
+              "checksum": "SHA-256:de4b3fbf0683fd998e139a352392994566a7d729f67d32dd95cfaf95abe08b09",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avrdude_v8.1_Linux_32bit.tar.gz",
+              "url": "https://github.com//avrdudes/avrdude/releases/download/v8.1/avrdude_v8.1_Linux_32bit.tar.gz"
+            },
+            {
+              "size": "4094555",
+              "checksum": "SHA-256:94016c6b17dd98592f4e50087d4d0fc7d5fd26f471d16b0a9a3e6dc93b154f2a",
+              "host": "i686-mingw32",
+              "archiveFileName": "avrdude_v8.1_Windows_32bit.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.1/avrdude_v8.1_Windows_32bit.tar.gz"
+            }
+          ]
+        },
+        {
+          "name": "avrocd-tools",
+          "version": "1.3.2",
+          "systems": [
+            {
+              "size": "1064",
+              "checksum": "SHA-256:44d10ad514c0e5b098e3a6b099038af5e91136b8f9822e9f4a4d1e19231080d7",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avrocd-tools-1.3.2-arm-linux-gnueabihf.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.3.2/avrocd-tools-1.3.2-arm-linux-gnueabihf.tar.gz"
+            },
+            {
+              "size": "39006372",
+              "checksum": "SHA-256:66ffa9c40de8c6f183ddae4aa2e03bac95b5c17ec051c7361f4251843f4a0c40",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.3.2-aarch64-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.3.2/avrocd-tools-1.3.2-aarch64-linux-gnu.tar.gz"
+            },
+            {
+              "size": "28421105",
+              "checksum": "SHA-256:48981636565a3c2ed3fd9523eb652555149e3de4745fe6e90957b0d46df3850b",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "avrocd-tools-1.3.2-x86_64-apple-darwin.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.3.2/avrocd-tools-1.3.2-x86_64-apple-darwin.tar.gz"
+            },
+            {
+              "size": "39502091",
+              "checksum": "SHA-256:2c5e8def571acd074e70149f9a3f02233ecea76b96747030738455aee1f1c310",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.3.2-x86_64-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.3.2/avrocd-tools-1.3.2-x86_64-linux-gnu.tar.gz"
+            },
+            {
+              "size": "1072",
+              "checksum": "SHA-256:a102302b1eb52324749681f930b7b6fb8e0b403891ebf3c2b60dfbd187db26c7",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.3.2-i686-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.3.2/avrocd-tools-1.3.2-i686-linux-gnu.tar.gz"
+            },
+            {
+              "size": "19170589",
+              "checksum": "SHA-256:5fcaa4eb428e826b51276d1f3437def027844f74aea6abed46926449b6e6a238",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "avrocd-tools-1.3.2-x86_64-mingw32.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.3.2/avrocd-tools-1.3.2-x86_64-mingw32.tar.gz"
+            },
+            {
+              "size": "26984083",
+              "checksum": "SHA-256:fbe56840a508b3ef0eb8730ee36b9fe44514f3fae02533d91e923bcc40eb1b5e",
+              "host": "arm64-apple-darwin",
+              "archiveFileName": "avrocd-tools-1.3.2-arm64-apple-darwin.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.3.2/avrocd-tools-1.3.2-arm64-apple-darwin.tar.gz"
+            },
+            {
+              "size": "17158894",
+              "checksum": "SHA-256:e6cf64d4635608848a31c2a870dc58d69e2ce9783b343d44a39523c3f6d68f14",
+              "host": "i686-mingw32",
+              "archiveFileName": "avrocd-tools-1.3.2-i686-mingw32.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.3.2/avrocd-tools-1.3.2-i686-mingw32.tar.gz"
+            }
+          ]
+        },
+        {
+          "name": "avrocd-tools",
+          "version": "1.4.0",
+          "systems": [
+            {
+              "size": "1065",
+              "checksum": "SHA-256:2dfc45c57bddd04d5eb27d1d7ae0f2d07b9585af3be4e5c747a162530c743c15",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avrocd-tools-1.4.0-arm-linux-gnueabihf.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.4.0/avrocd-tools-1.4.0-arm-linux-gnueabihf.tar.gz"
+            },
+            {
+              "size": "41740367",
+              "checksum": "SHA-256:239e6a81874136db992b248fc8c11ef13dd4fb1d5e6022fdefd308de8c05a5fd",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.4.0-aarch64-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.4.0/avrocd-tools-1.4.0-aarch64-linux-gnu.tar.gz"
+            },
+            {
+              "size": "31154652",
+              "checksum": "SHA-256:80334ecb2b06b60dc71158342d380c67b234a41059c665f9f89c1d0855713fb6",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "avrocd-tools-1.4.0-x86_64-apple-darwin.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.4.0/avrocd-tools-1.4.0-x86_64-apple-darwin.tar.gz"
+            },
+            {
+              "size": "42225423",
+              "checksum": "SHA-256:3f2c6b9ccc10b791d6e2de29ba7dc4b9b1e380301ebe8f9b37f12cc5e8b5957f",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.4.0-x86_64-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.4.0/avrocd-tools-1.4.0-x86_64-linux-gnu.tar.gz"
+            },
+            {
+              "size": "1072",
+              "checksum": "SHA-256:817c50d421a510287a56a2e58d78ef1e8c2ecc09cd1c9243a0884736da964dc4",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avrocd-tools-1.4.0-i686-linux-gnu.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.4.0/avrocd-tools-1.4.0-i686-linux-gnu.tar.gz"
+            },
+            {
+              "size": "21937129",
+              "checksum": "SHA-256:6fde0418364b5b23b33a2ccc89300214c3ea1fea93498c997e7eefa4e92733ff",
+              "host": "x86_64-mingw32",
+              "archiveFileName": "avrocd-tools-1.4.0-x86_64-mingw32.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.4.0/avrocd-tools-1.4.0-x86_64-mingw32.tar.gz"
+            },
+            {
+              "size": "29271118",
+              "checksum": "SHA-256:3f25f2769fff0bdaa90da163be5b1b513940ed30927724469aac9225ca5e1ba6",
+              "host": "arm64-apple-darwin",
+              "archiveFileName": "avrocd-tools-1.4.0-arm64-apple-darwin.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.4.0/avrocd-tools-1.4.0-arm64-apple-darwin.tar.gz"
+            },
+            {
+              "size": "19913851",
+              "checksum": "SHA-256:7e3aaf545f7a4a351de8bc51da8859f3459ed01fffec8cdee1f006f9eb6a27b1",
+              "host": "i686-mingw32",
+              "archiveFileName": "avrocd-tools-1.4.0-i686-mingw32.tar.gz",
+              "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.4.0/avrocd-tools-1.4.0-i686-mingw32.tar.gz"
+            }
+          ]
+        },
+        {
+          "name": "avrdude",
+          "version": "8.3",
+          "systems": [
+            {
+              "size": "3635771",
+              "checksum": "SHA-256:06778d5d2abd4558db5e87748031c52c4537c19d5ba0c0c9e66e97b4d924bcf9",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avrdude_v8.3_Linux_ARMv6.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_Linux_ARMv6.tar.gz"
+            },
+            {
+              "size": "3782942",
+              "checksum": "SHA-256:3644f7e43b0e65697ae02ed118e0691bee10439993b6026c9e0072dd44fe2983",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avrdude_v8.3_Linux_ARM64.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_Linux_ARM64.tar.gz"
+            },
+            {
+              "size": "3360647",
+              "checksum": "SHA-256:ad0268e2d24dd4ade1366c783a5c1f25386d0a737b4b07494246a1eedbdfc9eb",
+              "host": "x86_64-apple-darwin12",
+              "archiveFileName": "avrdude_v8.3_macOS_64bit.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_macOS_64bit.tar.gz"
+            },
+            {
+              "size": "3720526",
+              "checksum": "SHA-256:ef7461a5e09d666dcbeedb9bcb451cb21d0f1ce1c885a6700462bb6c9518fb46",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avrdude_v8.3_Linux_64bit.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_Linux_64bit.tar.gz"
+            },
+            {
+              "size": "3665222",
+              "checksum": "SHA-256:3c6dd0297534a55c2c98799228367a0ec67dc395c8e53ffa884d07ea6548297d",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avrdude_v8.3_Linux_32bit.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_Linux_32bit.tar.gz"
+            },
+            {
+              "size": "4101672",
+              "checksum": "SHA-256:16b44cec6a1d5dbb00cf9affac9fc8a9056c5e7ae86da61cc3925e09d3fdee64",
+              "host": "i686-mingw32",
+              "archiveFileName": "avrdude_v8.3_Windows_32bit.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_Windows_32bit.tar.gz"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
