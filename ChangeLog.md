@@ -28,8 +28,10 @@ The 2.6.11 release is pending, following that the next version will by 2.7.0, ba
 
 ### 2.7.0 (pre-releases of the debug-configured fork felias-fogg/megaTinyCore)
 
-* Next release:
-  * PR #1289 by burnsb
+* 2.7.0-pre8:
+  * Uploading with SerialUPDI works again. Since 2.7.0-pre5 the fork coughed on that.
+  * millis()/delay() with the RTC as millis timer run at the right speed (upstream PR #1289 by burnsb, fixes #1288).
+  * The release checks also cover Upload Using Programmer and Burn Bootloader now.
 * 2.7.0-pre7:
   * Uploading to the Microchip boards (Curiosity Nano, Xplained Pro/Mini/Nano) works again with avrdude 8.3: Upload goes through the selected programmer (the nEDBG by default), and two broken fuse values were corrected (WDTCFG on the Microchip boards, SYSCFG0 on their Optiboot variants). 
   * A new check, run before every release, tries avrdude with every programmer, part and fuse value of the core. 

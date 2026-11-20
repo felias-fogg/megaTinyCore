@@ -2156,6 +2156,7 @@ microchip.bootloader.TCD0CFG_serialupdi=4:0x00
 microchip.bootloader.SYSCFG0=0b1100{bootloader.resetpinbits}0{bootloader.eesavebit}
 microchip.bootloader.APPEND=0x00
 microchip.bootloader.BOOTEND=0x00
+microchip.bootloader.avrdudestring=
 microchip.bootloader.resetpinbits=01
 microchip.bootloader.altreset=Alt reset not supported on 0/1-series.
 microchip.bootloader.tool=avrdude

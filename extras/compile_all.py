@@ -114,7 +114,10 @@ def menus_worth_varying(boards: dict, platform: dict) -> list:
 def menu_options(boards: dict, board: str) -> dict:
     """
     Which menus this board offers and which options each has, in the order they
-    are declared: the first one is what the IDE offers by default.
+    are declared: the first one is what the IDE offers by default. An option is
+    what has a label (board.menu.MENU.OPTION=label); properties of an option
+    without one are left-overs the IDE never offers, and arduino-cli refuses an
+    FQBN that names it.
     """
     offered: dict = {}
     prefix = f"{board}.menu."
@@ -122,7 +125,7 @@ def menu_options(boards: dict, board: str) -> dict:
         if not key.startswith(prefix):
             continue
         parts = key[len(prefix):].split(".")
-        if len(parts) >= 2 and parts[1] not in offered.setdefault(parts[0], []):
+        if len(parts) == 2 and parts[1] not in offered.setdefault(parts[0], []):
             offered[parts[0]].append(parts[1])
     return offered
 

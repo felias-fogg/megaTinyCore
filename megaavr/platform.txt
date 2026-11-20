@@ -16,7 +16,7 @@ version={versionnum.major}.{versionnum.minor}.{versionnum.patch}{versionnum.post
 # Stupid workaround #
 # for IDE bug       #
 #####################
-version=2.7.0-pre7
+version=2.7.0-pre8
 
 build.versiondefines=-DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} -DMEGATINYCORE="{version}" -DMEGATINYCORE_MAJOR={versionnum.major}UL -DMEGATINYCORE_MINOR={versionnum.minor}UL -DMEGATINYCORE_PATCH={versionnum.patch}UL -DMEGATINYCORE_RELEASED={versionnum.released}
 
@@ -208,8 +208,11 @@ tools.avrdude.upload.network_pattern="{network_cmd}" -address {serial.port} -por
 # and the #REMOVE#, leaving the correct path.                #
 ##############################################################
 
-tools.serialupdi.cmd={runtime.platform.path}/tools/python3/python3
-#REMOVE#tools.serialupdi.cmd={runtime.tools.python3.path}/python3
+# In this fork, the release is the repository as it stands: the python3 tool
+# comes from the index (packager megaTinyCore), as in the releases of
+# SpenceKonde, whose build script swaps these two lines
+#tools.serialupdi.cmd={runtime.platform.path}/tools/python3/python3
+tools.serialupdi.cmd={runtime.tools.python3.path}/python3
 
 ## Unused Parameters.
 # SerialUPDI has only one level of verbosity.

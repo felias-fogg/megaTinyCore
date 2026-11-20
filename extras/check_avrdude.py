@@ -193,6 +193,7 @@ def host_name() -> str:
 # What the IDE fills in itself when it runs an upload recipe.
 SUPPLIED_AT_UPLOAD = {"serial.port", "serial.port.file", "build.path", "build.project_name",
                       "upload.verbose", "upload.verify", "program.verbose", "program.verify",
+                      "bootloader.verbose",
                       "upload.port.address", "upload.port.protocol"}
 
 
@@ -283,6 +284,53 @@ def check_upload_pattern(boards: dict, platform: dict, config: str) -> None:
             problem(f"board '{board}': {', '.join(on_usb)} connect(s) through USB, but the "
                     "upload command passes the serial port with -P{serial.port}")
     print(f"  {len(uploading)} board(s) uploading through the avrdude upload pattern checked")
+
+
+def supplied_by_programmer(name: str) -> bool:
+    """
+    What the selected programmer's entry in programmers.txt contributes. Only
+    these two: a core's own program.* properties (program.avrdudefuse5, say) come
+    from boards.txt and have to be defined there.
+    """
+    return name in ("protocol", "program.extra_params")
+
+
+def check_programmer_patterns(boards: dict, platform: dict) -> None:
+    """
+    Upload Using Programmer and Burn Bootloader run the program and the bootloader
+    pattern, with the properties the board and the programmer define. Whatever is
+    left as '{name}' reaches avrdude as it stands, and avrdude refuses it.
+    """
+    checked = 0
+    for kind in ("program", "bootloader"):
+        pattern = platform.get(f"tools.avrdude.{kind}.pattern", "")
+        if not pattern:
+            continue
+        for board in board_ids(boards):
+            values = board_values(boards, board)
+            if kind == "bootloader" and "avrdude" not in values.get("bootloader.tool", set()):
+                continue
+            checked += 1
+            missing = {m for m in unresolved_placeholders(pattern, values, platform)
+                       if not supplied_by_programmer(m)}
+            what = "Upload Using Programmer" if kind == "program" else "Burn Bootloader"
+            if missing:
+                problem(f"board '{board}': {what} leaves "
+                        f"{', '.join('{' + m + '}' for m in sorted(missing))} unresolved")
+            # A placeholder standing as an argument of its own has to become an
+            # option or nothing: avrdude 8 silently ignores a stray word such as
+            # '5:0b11011001', and the fuse it was meant to write is not written.
+            for name in BARE_ARGUMENT.findall(pattern):
+                for value in sorted(values.get(name, set())):
+                    value = value.strip().strip('"')
+                    if value and not value.startswith("-"):
+                        problem(f"board '{board}': {what} passes '{value}' for {{{name}}}, "
+                                "which is no option; avrdude ignores it")
+    print(f"  {checked} program/bootloader command(s) checked")
+
+
+# {name} standing on its own between blanks (quoted or not) in a pattern
+BARE_ARGUMENT = re.compile(r'(?:^|\s)"?\{([^{}]+)\}"?(?=\s|$)')
 
 
 IMMEDIATE = re.compile(r"-U\s*[\w/]+:w:([^:\"\s]+):m")
@@ -385,11 +433,15 @@ def check(root: str, tool: str) -> None:
             if part.lower() not in names:
                 problem(f"avrdude does not know part '{part}' (boards {', '.join(sorted(users))})")
         print(f"  {len(parts)} part(s) checked")
-    if PROBLEMS:
+    # An unknown part is one problem among others, not a reason to stop looking:
+    # the checks below only need one part avrdude knows.
+    usable = sorted(p for p in parts if not names or p.lower() in names)
+    if not usable:
+        problem("avrdude knows none of the parts the core asks for, so nothing else can be checked")
         return
 
     asked = programmers_asked_for(boards, programmers)
-    a_part = sorted(parts)[0]
+    a_part = usable[0]
     for programmer, users in sorted(asked.items()):
         said = try_programmer(command, config, programmer, a_part)
         if said:
@@ -398,6 +450,7 @@ def check(root: str, tool: str) -> None:
     print(f"  {len(asked)} programmer(s) checked")
 
     check_upload_pattern(boards, platform, config)
+    check_programmer_patterns(boards, platform)
     check_immediate_values(boards, platform)
 
     # The classification has to hold for this avrdude: a programmer that cannot
