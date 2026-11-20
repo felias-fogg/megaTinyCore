@@ -42,12 +42,16 @@ jobs:
             || { echo "ChangeLog.md has no section for ${BASE}"; exit 1; }
 
   compile:
-    name: Compile one board per series and pin count
+    name: Compile every board, every menu value at least once
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           path: megaTinyCore
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
       - uses: arduino/setup-arduino-cli@v2
 
@@ -72,22 +76,18 @@ jobs:
             'void loop() { digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN)); delay(500); }' \
             > "$HOME/sketches/Blink/Blink.ino"
 
-      - name: Compile, as released and optimized for debugging
+      - name: Compile every board, every menu value at least once
         run: |
-          # 0-, 1- and 2-series in 24 pins, and 20-, 14- and 8-pin parts
-          fail=0
-          for board in atxy7:chip=3227 atxy7:chip=3217 atxy7:chip=1607 atxy6:chip=3216 \
-                       atxy4:chip=3224 atxy4:chip=1614 atxy2:chip=412; do
-            for opt in "" --optimize-for-debug; do
-              if arduino-cli compile -b "mtcci:megaavr:${board}" $opt "$HOME/sketches/Blink" \
-                   > out.txt 2>&1; then
-                echo "ok   ${board} ${opt}"
-              else
-                echo "FAIL ${board} ${opt}"; cat out.txt; fail=1
-              fi
-            done
-          done
-          exit $fail
+          # compile_all.py works out which menus change the build and compiles
+          # every value of each at least once (--coverage auto); every
+          # combination would be some 13 million builds, this is about 380.
+          # The menus are not independent, so some pairs are refused by the
+          # core on purpose; those are listed in compile_all_known_failures.txt
+          # and only a failure not on that list fails the job.
+          python megaTinyCore/extras/compile_all.py --fqbn-prefix mtcci:megaavr \
+                 --root megaTinyCore/megaavr --coverage auto \
+                 --known-failures megaTinyCore/extras/compile_all_known_failures.txt \
+                 --work-dir "$HOME/work" --timeout 300
 
       - name: Optimize for debugging gives -Og
         run: |

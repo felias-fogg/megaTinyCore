@@ -1,0 +1,101 @@
+# Combinations that megaTinyCore refuses to build, for compile_all.py --known-failures.
+# compile_all.py pairs the menu options in rotation, and megaTinyCore's menus are not
+# independent of each other, so some pairs ask for something the chip cannot do.
+# Most of these are deliberate refusals by the core (#error, badArg). The two groups
+# marked "upstream bug?" look like genuine problems in the core, left as they are.
+# The pairing is deterministic: this list stays valid until boards.txt changes.
+# compile_all.py names entries that build now or were not built at all.
+
+atxy2:PWMmux=default,attach=allenabled,chip=202,clock=8internal,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy2:PWMmux=buffered,attach=manual,chip=212,clock=1internal,millis=disabled,printf=full,wiremode=mands  # printf=full does not fit into 2 KB of flash
+atxy2:PWMmux=default,attach=allenabled,chip=402w,clock=16internaltuned,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy2:PWMmux=buffered,attach=manual,chip=202,clock=6internaltuned,millis=disabled,printf=full,wiremode=mands  # printf=full does not fit into 2 KB of flash
+atxy2:PWMmux=I3,attach=oldversion,chip=212,clock=20extclock,millis=rtc,printf=minimal,wiremode=mands  # external clock input is the LED_BUILTIN pin
+atxy2:PWMmux=default,attach=allenabled,chip=202,clock=16extclock,millis=enabled,printf=default,wiremode=mors  # external clock input is the LED_BUILTIN pin
+atxy2:PWMmux=buffered,attach=manual,chip=402w,clock=12extclock,millis=disabled,printf=full,wiremode=mands  # external clock input is the LED_BUILTIN pin
+atxy2:PWMmux=I3,attach=oldversion,chip=412,clock=10extclock,millis=timera,printf=minimal,wiremode=mors  # external clock input is the LED_BUILTIN pin
+atxy2:PWMmux=default,attach=allenabled,chip=402,clock=8extclock,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy2:PWMmux=buffered,attach=manual,chip=212,clock=24internaltuned,millis=timerb0,printf=full,wiremode=mors  # printf=full does not fit into 2 KB of flash
+atxy2:PWMmux=buffered,attach=manual,chip=412,clock=32internaltuned,millis=disabled,printf=full,wiremode=mands  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+atxy2:PWMmux=I3,attach=oldversion,chip=402,clock=24extclock,millis=timera,printf=minimal,wiremode=mors  # external clock input is the LED_BUILTIN pin
+atxy2:PWMmux=default,attach=allenabled,chip=212,clock=25extclock,millis=timerd,printf=default,wiremode=mands  # external clock input is the LED_BUILTIN pin
+atxy2:PWMmux=buffered,attach=manual,chip=202,clock=30extclock,millis=timerb0,printf=full,wiremode=mors  # external clock input is the LED_BUILTIN pin
+atxy2:PWMmux=I3,attach=oldversion,chip=402w,clock=32extclock,millis=rtc,printf=minimal,wiremode=mands  # external clock input is the LED_BUILTIN pin
+atxy2o:PWMmux=default,attach=allenabled,chip=202,clocko=8internal,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy2o:PWMmux=buffered,attach=manual,chip=212,clocko=1internal,millis=disabled,printf=full,wiremode=mands  # printf=full does not fit into 2 KB of flash
+atxy2o:PWMmux=default,attach=allenabled,chip=402w,clocko=16internaltuned,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy2o:PWMmux=buffered,attach=manual,chip=202,clocko=6internaltuned,millis=disabled,printf=full,wiremode=mands  # printf=full does not fit into 2 KB of flash
+atxy2o:PWMmux=default,attach=allenabled,chip=202,clocko=20extclock,millis=enabled,printf=default,wiremode=mors  # external clock input is the LED_BUILTIN pin
+atxy2o:PWMmux=buffered,attach=manual,chip=402w,clocko=16extclock,millis=disabled,printf=full,wiremode=mands  # external clock input is the LED_BUILTIN pin
+atxy2o:PWMmux=I3,attach=oldversion,chip=412,clocko=12extclock,millis=timera,printf=minimal,wiremode=mors  # external clock input is the LED_BUILTIN pin
+atxy2o:PWMmux=default,attach=allenabled,chip=402,clocko=10extclock,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy2o:PWMmux=buffered,attach=manual,chip=212,clocko=8extclock,millis=timerb0,printf=full,wiremode=mors  # external clock input is the LED_BUILTIN pin
+atxy2o:PWMmux=I3,attach=oldversion,chip=402,clocko=32internaltuned,millis=timera,printf=minimal,wiremode=mors  # badCall with a tuned clock (upstream bug?)
+atxy2o:PWMmux=default,attach=allenabled,chip=212,clocko=24extclock,millis=timerd,printf=default,wiremode=mands  # external clock input is the LED_BUILTIN pin
+atxy2o:PWMmux=buffered,attach=manual,chip=202,clocko=25extclock,millis=timerb0,printf=full,wiremode=mors  # external clock input is the LED_BUILTIN pin
+atxy2o:PWMmux=I3,attach=oldversion,chip=402w,clocko=30extclock,millis=rtc,printf=minimal,wiremode=mands  # external clock input is the LED_BUILTIN pin
+atxy2o:PWMmux=default,attach=allenabled,chip=412,clocko=32extclock,millis=enabled,printf=default,wiremode=mors  # external clock input is the LED_BUILTIN pin
+atxy4:PWMmux=I6,attach=manual,chip=1604,clock=8internal,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy4:PWMmux=I3,attach=allenabled,chip=814,clock=4internal,millis=timerb1,printf=minimal,wiremode=mands  # millis on TCB1, which this part does not have
+atxy4:PWMmux=I3_D,attach=allenabled,chip=214,clock=12internaltuned,millis=disabled,printf=full,wiremode=mors  # printf=full does not fit into 2 KB of flash
+atxy4:PWMmux=default,attach=portbonly,chip=3224,clock=8internaltuned,millis=timerd,printf=default,wiremode=mors  # millis on TCD0, which this part does not have
+atxy4:PWMmux=I6,attach=portaonly,chip=404,clock=8extclock,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy4:PWMmux=I3_D,attach=portbonly,chip=214,clock=24internaltuned,millis=timerb0,printf=full,wiremode=mors  # printf=full does not fit into 2 KB of flash
+atxy4:PWMmux=I3,attach=manual,chip=204,clock=25internaltuned,millis=timerb1,printf=minimal,wiremode=mands  # millis on TCB1, which this part does not have
+atxy4o:PWMmux=I6,attach=manual,chip=804,clocko=8internal,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy4o:PWMmux=I3,attach=allenabled,chip=404,clocko=4internal,millis=timerb1,printf=minimal,wiremode=mands  # millis on TCB1, which this part does not have
+atxy4o:PWMmux=D_buffered,attach=portbonly,chip=204,clocko=1internal,millis=rtcxtal,printf=full,wiremode=mands  # external RTC clock not supported on this part
+atxy4o:PWMmux=buffered,attach=oldversion,chip=214,clocko=5internaltuned,millis=timerb1,printf=minimal,wiremode=mors  # millis on TCB1, which this part does not have
+atxy4o:PWMmux=I3,attach=portbonly,chip=1604,clocko=1internaltuned,millis=rtcxosc,printf=minimal,wiremode=mands  # external RTC clock not supported on this part
+atxy4o:PWMmux=I6,attach=portaonly,chip=404,clocko=10extclock,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy4o:PWMmux=I3_D,attach=portbonly,chip=214,clocko=8extclock,millis=timerb0,printf=full,wiremode=mors  # printf=full does not fit into 2 KB of flash
+atxy4o:PWMmux=I3,attach=manual,chip=204,clocko=24internaltuned,millis=timerb1,printf=minimal,wiremode=mands  # millis on TCB1, which this part does not have
+atxy4o:PWMmux=D_buffered,attach=allenabled,chip=1604,clocko=30internaltuned,millis=rtcxtal,printf=full,wiremode=mands  # external RTC clock not supported on this part
+atxy4o:PWMmux=buffered,attach=portaonly,chip=814,clocko=32internaltuned,millis=rtcxosc,printf=minimal,wiremode=mors  # badCall with a tuned clock (upstream bug?)
+atxy6:PWMmux=D_buffered,attach=portconly,chip=1616,clock=8internal,millis=timerd,printf=default,wiremode=mands  # PWM mapping not available on this part
+atxy6:PWMmux=U3_D,attach=manual,chip=806,clock=1internal,millis=rtcxtal,printf=full,wiremode=mands  # external RTC clock not supported on this part
+atxy6:PWMmux=I3_D,attach=portconly,chip=3216,clock=8internaltuned,millis=timerd,printf=default,wiremode=mors  # PWM mapping not available on this part
+atxy6:PWMmux=D_buffered,attach=portbonly,chip=416,clock=10extclock,millis=timera,printf=minimal,wiremode=mors  # PWM mapping not available on this part
+atxy6:PWMmux=buffered,attach=portconly,chip=406,clock=8extclock,millis=timerd,printf=default,wiremode=mands  # millis on TCD0, which this part does not have
+atxy6:PWMmux=U3_A,attach=manual,chip=1616,clock=32internaltuned,millis=rtcxtal,printf=full,wiremode=mands  # PWM mapping not available on this part
+atxy6:PWMmux=U3,attach=oldversion,chip=1606,clock=24extclock,millis=rtcxosc,printf=minimal,wiremode=mors  # external RTC clock not supported on this part
+atxy6o:PWMmux=D_buffered,attach=portconly,chip=816,clocko=8internal,millis=timerd,printf=default,wiremode=mands  # PWM mapping not available on this part
+atxy6o:PWMmux=U6_A,attach=portbconly,chip=416,clocko=4internal,millis=timerb1,printf=minimal,wiremode=mands  # millis on TCB1, which this part does not have
+atxy6o:PWMmux=U3_D,attach=manual,chip=3216,clocko=1internal,millis=rtcxtal,printf=full,wiremode=mands  # PWM mapping not available on this part
+atxy6o:PWMmux=U3_A,attach=oldversion,chip=1616,clocko=20internaltuned,millis=rtcxosc,printf=minimal,wiremode=mors  # PWM mapping not available on this part
+atxy6o:PWMmux=I3_D,attach=portconly,chip=416,clocko=8internaltuned,millis=timerd,printf=default,wiremode=mors  # PWM mapping not available on this part
+atxy6o:PWMmux=SC6,attach=manual,chip=1606,clocko=2internaltuned,millis=rtcxtal,printf=full,wiremode=mors  # external RTC clock not supported on this part
+atxy6o:PWMmux=3_A_buffered,attach=portaonly,chip=416,clocko=16extclock,millis=disabled,printf=full,wiremode=mands  # PWM mapping not available on this part
+atxy6o:PWMmux=U6,attach=portbconly,chip=1606,clocko=24internaltuned,millis=timerb1,printf=minimal,wiremode=mands  # millis on TCB1, which this part does not have
+atxy6o:PWMmux=U3_D,attach=portcaonly,chip=816,clocko=25internaltuned,millis=rtc,printf=default,wiremode=mors  # PWM mapping not available on this part
+atxy6o:PWMmux=U3_A,attach=manual,chip=806,clocko=30internaltuned,millis=rtcxtal,printf=full,wiremode=mands  # external RTC clock not supported on this part
+atxy6o:PWMmux=U3,attach=oldversion,chip=416,clocko=32internaltuned,millis=rtcxosc,printf=minimal,wiremode=mors  # badCall with a tuned clock (upstream bug?)
+atxy6o:PWMmux=I3_D,attach=portbonly,chip=1616,clocko=30extclock,millis=timera,printf=minimal,wiremode=mands  # PWM mapping not available on this part
+atxy6o:PWMmux=I3_A,attach=portconly,chip=1606,clocko=32extclock,millis=timerd,printf=default,wiremode=mors  # millis on TCD0, which this part does not have
+atxy7:PWMmux=C6_D,attach=manual,chip=807,clock=1internal,millis=rtcxtal,printf=full,wiremode=mands  # external RTC clock not supported on this part
+atxy7:PWMmux=UC6,attach=portconly,chip=1627,clock=8internaltuned,millis=timerd,printf=default,wiremode=mors  # millis on TCD0, which this part does not have
+atxy7:PWMmux=U3_A,attach=portbconly,chip=1607,clock=5internaltuned,millis=timerb1,printf=minimal,wiremode=mors  # millis on TCB1, which this part does not have
+atxy7:PWMmux=I6,attach=oldversion,chip=807,clock=1internaltuned,millis=rtcxosc,printf=minimal,wiremode=mands  # external RTC clock not supported on this part
+atxy7:PWMmux=A_default,attach=oldversion,chip=817,clock=32internaltuned,millis=rtcxosc,printf=minimal,wiremode=mors  # badCall with a tuned clock (upstream bug?)
+atxy7:PWMmux=buffered,attach=portconly,chip=3227,clock=32extclock,millis=timerd,printf=default,wiremode=mors  # millis on TCD0, which this part does not have
+atxy7o:PWMmux=U6_A,attach=portbconly,chip=417,clocko=4internal,millis=timerb1,printf=minimal,wiremode=mands  # millis on TCB1, which this part does not have
+atxy7o:PWMmux=C6_A,attach=oldversion,chip=1607,clocko=20internaltuned,millis=rtcxosc,printf=minimal,wiremode=mors  # external RTC clock not supported on this part
+atxy7o:PWMmux=U3_A,attach=portbconly,chip=1607,clocko=5internaltuned,millis=timerb1,printf=minimal,wiremode=mors  # millis on TCB1, which this part does not have
+atxy7o:PWMmux=I6_A,attach=manual,chip=807,clocko=2internaltuned,millis=rtcxtal,printf=full,wiremode=mors  # external RTC clock not supported on this part
+atxy7o:PWMmux=I3,attach=portbconly,chip=417,clocko=24internaltuned,millis=timerb1,printf=minimal,wiremode=mands  # millis on TCB1, which this part does not have
+atxy7o:PWMmux=A_default,attach=oldversion,chip=1607,clocko=32internaltuned,millis=rtcxosc,printf=minimal,wiremode=mors  # external RTC clock not supported on this part
+microchip:attach=oldversion,board_name=xm817,clock=4internal,millis=timerb1,printf=minimal,wiremode=mands  # millis on TCB1, which this part does not have
+microchip:attach=oldversion,board_name=xp817,clock=10internaltuned,millis=timera,printf=minimal,wiremode=mands  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchip:attach=allenabled,board_name=xm817,clock=8internaltuned,millis=timerd,printf=default,wiremode=mors  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchip:attach=manual,board_name=xn416,clock=6internaltuned,millis=timerb0,printf=full,wiremode=mands  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchip:attach=oldversion,board_name=cn3217,clock=5internaltuned,millis=timerb1,printf=minimal,wiremode=mors  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchip:attach=allenabled,board_name=cn1627,clock=4internaltuned,millis=rtc,printf=default,wiremode=mands  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchip:attach=manual,board_name=cn1607,clock=1internaltuned,millis=rtcxtal,printf=full,wiremode=mors  # external RTC clock not supported on this part
+microchip:attach=oldversion,board_name=xn416,clock=32internaltuned,millis=timera,printf=minimal,wiremode=mors  # badCall with a tuned clock (upstream bug?)
+microchipo:attach=portbonly,board_name=xp817,clocko=10internaltuned,printf=minimal,wiremode=mands  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchipo:attach=portconly,board_name=xm817,clocko=8internaltuned,printf=default,wiremode=mors  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchipo:attach=portabonly,board_name=xn416,clocko=6internaltuned,printf=full,wiremode=mands  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchipo:attach=portbconly,board_name=cn3217,clocko=5internaltuned,printf=minimal,wiremode=mors  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchipo:attach=portcaonly,board_name=cn1627,clocko=4internaltuned,printf=default,wiremode=mands  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchipo:attach=manual,board_name=cn1607,clocko=1internaltuned,printf=full,wiremode=mors  # F_CPU defined as 0 with a tuned clock (upstream bug?)
+microchipo:attach=portbonly,board_name=xn416,clocko=32internaltuned,printf=minimal,wiremode=mors  # badCall with a tuned clock (upstream bug?)
