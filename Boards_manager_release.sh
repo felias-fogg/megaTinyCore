@@ -27,6 +27,8 @@ INDEX="${INDEX_FILE:-package_${AUTHOR}_${REPOSITORY}_index.json}"
 # runtime.tools.avr-debugger.path.
 AVRDUDE_VERSION="8.3"
 AVR_GCC_VERSION="7.3.0-atmel3.6.1-azduino7b1"
+# python3 is what SerialUPDI runs (since 2.7.0-pre8; pre5 to pre7 lacked it)
+PYTHON3_VERSION="3.7.2-post1"
 
 TAG="$1"
 if [ -z "$TAG" ]; then
@@ -93,6 +95,7 @@ jq -r                                          \
 --arg file_size        "$FILE_SIZE"            \
 --arg avrdude_ver      "$AVRDUDE_VERSION"      \
 --arg avr_gcc_ver      "$AVR_GCC_VERSION"      \
+--arg python3_ver      "$PYTHON3_VERSION"      \
 --arg file_name        "${NAME}.tar.bz2"       \
 '.packages[].platforms[.packages[].platforms | length] |= . +
 {
@@ -135,6 +138,11 @@ jq -r                                          \
       "packager": "arduino",
       "name": "arduinoOTA",
       "version": "1.3.0"
+    },
+    {
+      "packager": "megaTinyCore",
+      "name": "python3",
+      "version": $python3_ver
     }
   ]
 }' "$INDEX.tmp" > "$INDEX" || { mv "$INDEX.tmp" "$INDEX"; echo "jq failed, index unchanged"; exit 1; }
