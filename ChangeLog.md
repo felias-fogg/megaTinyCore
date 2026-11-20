@@ -32,6 +32,8 @@ The 2.6.11 release is pending, following that the next version will by 2.7.0, ba
   * Fixed a problem concerning property clashes (`millistimer` and `pwmflags`) in boards.txt, which did not lead to a problem in IDE 1, but in arduino-cli (and therefore IDE 2). If a property gets assignments in two different menus, in IDE 1 the order of the menus will decide the final outcome (this is undocumented and not guaranteed, though). In arduino-cli the process is randomized and leads to different outcomes in different runs!  Now overriding of default properties is solved by explicit assignments. 
   * A release workflow with several checks has been installed that led to the discovery of the above problem.
   * Fixed builds on Linux and macOS failing when the build path contains a blank (the hooks that write the `.lst` and `.map` files did not quote their paths).
+  * Moved to avrdude 8.3 and its own configuration file. avrdude 8.1 did not work in the earlier revisions of megaTinyCore. 
+  * The Curiosity Nano programmer is now called `pkobn_updi`.
 
 * 2.7.0-pre5: The core is *debug-configured*: the debug tools (PyAvrOCD, avr-gdb, the SVD files) come from the AvrDebugger package, which has to be installed in addition; the core no longer installs its own copy (avrocd-tools). The GDB server is started with `--arduino-ide`. When AvrDebugger is missing, clicking `Debug` brings up the gdb-server terminal, which says what to install; the stubs that do this are in `debugger/fallback/bin`, from AvrDebugger 0.2.0. Releases are now made by a workflow.
 * 2.7.0-pre4: Can be installed stand-alone and uses avrdude 8.1.

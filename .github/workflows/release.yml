@@ -41,6 +41,34 @@ jobs:
           grep -Eq "^#+[[:space:]]*v?${BASE//./\\.}([[:space:]]|$|\()" ChangeLog.md \
             || { echo "ChangeLog.md has no section for ${BASE}"; exit 1; }
 
+  avrdude:
+    name: avrdude can upload with every programmer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out the branch that carries the index
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: pages
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Try the avrdude this release will name in the index
+        run: |
+          # The version is the one Boards_manager_release.sh writes into the new
+          # index entry, and the tool comes from the URL the index gives for it:
+          # exactly the avrdude a user gets. No hardware involved; see the script.
+          VERSION="$(sed -n 's/^AVRDUDE_VERSION="\(.*\)"$/\1/p' pages/Boards_manager_release.sh)"
+          echo "avrdude ${VERSION}"
+          test -n "$VERSION"
+          python extras/check_avrdude.py --root megaavr \
+                 --index pages/package_SpenceKonde_megaTinyCore_index.json \
+                 --packager megaTinyCore --version "$VERSION" --host x86_64-linux-gnu
+
   compile:
     name: Compile every board, every menu value at least once
     runs-on: ubuntu-latest
@@ -98,7 +126,7 @@ jobs:
 
   publish:
     name: Publish
-    needs: [version, compile]
+    needs: [version, avrdude, compile]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
