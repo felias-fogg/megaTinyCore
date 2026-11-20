@@ -427,6 +427,54 @@
               "url": "https://github.com/felias-fogg/PyAvrOCD/releases/download/v1.4.0/avrocd-tools-1.4.0-i686-mingw32.tar.gz"
             }
           ]
+        },
+        {
+          "name": "avrdude",
+          "version": "8.3",
+          "systems": [
+            {
+              "size": "3635771",
+              "checksum": "SHA-256:06778d5d2abd4558db5e87748031c52c4537c19d5ba0c0c9e66e97b4d924bcf9",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "avrdude_v8.3_Linux_ARMv6.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_Linux_ARMv6.tar.gz"
+            },
+            {
+              "size": "3782942",
+              "checksum": "SHA-256:3644f7e43b0e65697ae02ed118e0691bee10439993b6026c9e0072dd44fe2983",
+              "host": "aarch64-linux-gnu",
+              "archiveFileName": "avrdude_v8.3_Linux_ARM64.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_Linux_ARM64.tar.gz"
+            },
+            {
+              "size": "3360647",
+              "checksum": "SHA-256:ad0268e2d24dd4ade1366c783a5c1f25386d0a737b4b07494246a1eedbdfc9eb",
+              "host": "x86_64-apple-darwin12",
+              "archiveFileName": "avrdude_v8.3_macOS_64bit.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_macOS_64bit.tar.gz"
+            },
+            {
+              "size": "3720526",
+              "checksum": "SHA-256:ef7461a5e09d666dcbeedb9bcb451cb21d0f1ce1c885a6700462bb6c9518fb46",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "avrdude_v8.3_Linux_64bit.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_Linux_64bit.tar.gz"
+            },
+            {
+              "size": "3665222",
+              "checksum": "SHA-256:3c6dd0297534a55c2c98799228367a0ec67dc395c8e53ffa884d07ea6548297d",
+              "host": "i686-linux-gnu",
+              "archiveFileName": "avrdude_v8.3_Linux_32bit.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_Linux_32bit.tar.gz"
+            },
+            {
+              "size": "4101672",
+              "checksum": "SHA-256:16b44cec6a1d5dbb00cf9affac9fc8a9056c5e7ae86da61cc3925e09d3fdee64",
+              "host": "i686-mingw32",
+              "archiveFileName": "avrdude_v8.3_Windows_32bit.tar.gz",
+              "url": "https://github.com/avrdudes/avrdude/releases/download/v8.3/avrdude_v8.3_Windows_32bit.tar.gz"
+            }
+          ]
         }
       ]
     }

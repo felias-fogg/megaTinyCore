@@ -25,7 +25,7 @@ INDEX="${INDEX_FILE:-package_${AUTHOR}_${REPOSITORY}_index.json}"
 # are no dependency any more since 2.7.0-pre5: they come from the AvrDebugger
 # package, which the user installs separately and the platform finds as
 # runtime.tools.avr-debugger.path.
-AVRDUDE_VERSION="avrdude_v8.1-released"
+AVRDUDE_VERSION="8.3"
 AVR_GCC_VERSION="7.3.0-atmel3.6.1-azduino7b1"
 
 TAG="$1"
