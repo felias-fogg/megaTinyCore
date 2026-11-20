@@ -28,6 +28,9 @@ The 2.6.11 release is pending, following that the next version will by 2.7.0, ba
 
 ### 2.7.0 (pre-releases of the debug-configured fork felias-fogg/megaTinyCore)
 
+* 2.7.0-pre7:
+  * Uploading to the Microchip boards (Curiosity Nano, Xplained Pro/Mini/Nano) works again with avrdude 8.3: Upload goes through the selected programmer (the nEDBG by default), and two broken fuse values were corrected (WDTCFG on the Microchip boards, SYSCFG0 on their Optiboot variants). 
+  * A new check, run before every release, tries avrdude with every programmer, part and fuse value of the core. 
 * 2.7.0-pre6: 
   * Fixed a problem concerning property clashes (`millistimer` and `pwmflags`) in boards.txt, which did not lead to a problem in IDE 1, but in arduino-cli (and therefore IDE 2). If a property gets assignments in two different menus, in IDE 1 the order of the menus will decide the final outcome (this is undocumented and not guaranteed, though). In arduino-cli the process is randomized and leads to different outcomes in different runs!  Now overriding of default properties is solved by explicit assignments. 
   * A release workflow with several checks has been installed that led to the discovery of the above problem.

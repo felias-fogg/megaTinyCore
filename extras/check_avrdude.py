@@ -21,6 +21,12 @@ looking for the device and stops there; anything it says before that, about the
 configuration, an unknown programmer or missing USB support, is a problem. Parts
 are checked against the list avrdude prints with -p ?, because avrdude only looks
 at the part after it has found the programmer.
+
+For boards whose Upload runs the avrdude upload pattern (rather than the selected
+programmer), the command is also put together as the board defines it: a property
+nothing defines stays in it as '{name}', which avrdude 8 refuses where older
+versions let it pass, and a USB programmer handed the serial port with
+-P{serial.port} is refused by avrdude 8 as well.
 """
 
 import argparse
@@ -184,6 +190,135 @@ def host_name() -> str:
             "armv7l": "arm-linux-gnueabihf"}.get(machine, "i686-linux-gnu")
 
 
+# What the IDE fills in itself when it runs an upload recipe.
+SUPPLIED_AT_UPLOAD = {"serial.port", "serial.port.file", "build.path", "build.project_name",
+                      "upload.verbose", "upload.verify", "program.verbose", "program.verify",
+                      "upload.port.address", "upload.port.protocol"}
+
+
+def boards_uploading_with_avrdude(boards: dict) -> dict:
+    """
+    board -> its property values, for the boards whose Upload runs the avrdude
+    upload pattern: upload.tool is avrdude and some option sets upload.protocol.
+    A board without upload.protocol uploads through the selected programmer.
+    """
+    found = {}
+    for board in board_ids(boards):
+        values = board_values(boards, board)
+        if "avrdude" in values.get("upload.tool", set()) and values.get("upload.protocol"):
+            found[board] = values
+    return found
+
+
+def unresolved_placeholders(pattern: str, values: dict, platform: dict) -> set:
+    """The {properties} of the pattern that nothing defines for this board."""
+    local = {k[len("tools.avrdude."):]: v for k, v in platform.items()
+             if k.startswith("tools.avrdude.")}
+    missing: set = set()
+    seen: set = set()
+
+    def walk(text: str) -> None:
+        for name in re.findall(r"\{([^{}]+)\}", text):
+            if name in seen or name in SUPPLIED_AT_UPLOAD or name.startswith("runtime."):
+                continue
+            seen.add(name)
+            if name in values:
+                for value in values[name]:
+                    walk(value)
+            elif name in local:
+                walk(local[name])
+            elif name in platform:
+                walk(platform[name])
+            else:
+                missing.add(name)
+
+    walk(pattern)
+    return missing
+
+
+def usb_programmers(config: str) -> set:
+    """The programmers that avrdude's configuration connects through USB, parents included."""
+    with open(config, encoding="latin-1") as src:
+        text = src.read()
+    # avrdude 8 writes the name as a comment after the keyword: 'programmer # pkobn_updi'
+    entries = []
+    for parent, body in re.findall(
+            r'^programmer(?:\s+parent\s+"([^"]+)")?[ \t]*(?:#[^\n]*)?$(.*?)^;', text, re.S | re.M):
+        ids = re.search(r'^\s*id\s*=\s*([^;]+);', body, re.M)
+        found = re.search(r'^\s*connection_type\s*=\s*(\w+)\s*;', body, re.M)
+        names = [n.strip().strip('"') for n in ids.group(1).split(",")] if ids else []
+        entries.append((names, parent, found.group(1) if found else None))
+    connection = {}
+    for names, _, kind in entries:
+        for name in names:
+            connection[name] = kind
+    usb = set()
+    for names, parent, kind in entries:
+        while kind is None and parent:
+            kind = connection.get(parent)
+            parent = next((p for n, p, _ in entries if parent in n), None)
+        if kind == "usb":
+            usb.update(names)
+    return usb
+
+
+def check_upload_pattern(boards: dict, platform: dict, config: str) -> None:
+    """
+    Upload through the avrdude upload pattern, as the board defines it: every
+    property the pattern uses has to be there (avrdude 8 refuses '-b{upload.speed}'
+    that older versions read as 0), and a USB programmer must not be handed the
+    serial port, which avrdude 8 refuses for them.
+    """
+    pattern = platform.get("tools.avrdude.upload.pattern", "")
+    usb = usb_programmers(config)
+    passes_serial_port = re.search(r"-P\s*\{serial\.port\}", pattern) is not None
+    uploading = boards_uploading_with_avrdude(boards)
+    for board, values in sorted(uploading.items()):
+        missing = unresolved_placeholders(pattern, values, platform)
+        if missing:
+            problem(f"board '{board}': the avrdude upload command leaves "
+                    f"{', '.join('{' + m + '}' for m in sorted(missing))} unresolved")
+        on_usb = sorted(p for p in values["upload.protocol"] if p in usb)
+        if passes_serial_port and on_usb:
+            problem(f"board '{board}': {', '.join(on_usb)} connect(s) through USB, but the "
+                    "upload command passes the serial port with -P{serial.port}")
+    print(f"  {len(uploading)} board(s) uploading through the avrdude upload pattern checked")
+
+
+IMMEDIATE = re.compile(r"-U\s*[\w/]+:w:([^:\"\s]+):m")
+NUMBER = re.compile(r"(0x[0-9a-fA-F]+|0b[01]+|0[0-7]*|[1-9][0-9]*)")
+
+
+def check_immediate_values(boards: dict, platform: dict) -> None:
+    """
+    Fuses and lock bits are written as immediate values (-Ufuse0:w:VALUE:m), put
+    together from menu options. Every value a board can produce has to be a
+    number avrdude can parse; avrdude 8 refuses '0b0b00000000'.
+    """
+    patterns = [platform.get(f"tools.avrdude.{kind}.pattern", "")
+                for kind in ("upload", "program", "bootloader")]
+    templates = sorted({m for p in patterns for m in IMMEDIATE.findall(p)})
+    checked, refusals = 0, set()
+    for board in board_ids(boards):
+        values = board_values(boards, board)
+        for key, value in platform.items():
+            values.setdefault(key, {value})
+        for template in templates:
+            for value in set(expand(template, values)):
+                checked += 1
+                if NUMBER.fullmatch(value):
+                    continue
+                if " " in value and "{" not in value:
+                    # A sentence in place of the bits is a refusal by design: the
+                    # core lets avrdude fail with it, for an option the chip lacks.
+                    refusals.add(f"{board}: {value}")
+                    continue
+                problem(f"board '{board}': {template} can become '{value}', "
+                        "which avrdude cannot parse as a number")
+    print(f"  {checked} fuse/lock value(s) checked, {len(refusals)} of them refusals by "
+          "design (a message instead of the bits)")
+
+
 def fetch_tool(index_file: str, version: str, packager: str, host: str, into: str) -> str:
     """Download avrdude as the index offers it, check it, unpack it; return its folder."""
     with open(index_file, encoding="utf-8") as src:
@@ -261,6 +396,9 @@ def check(root: str, tool: str) -> None:
             problem(f"programmer '{programmer}' ({', '.join(sorted(users))}) does not get "
                     "as far as the port:\n      " + "\n      ".join(said.splitlines()[:4]))
     print(f"  {len(asked)} programmer(s) checked")
+
+    check_upload_pattern(boards, platform, config)
+    check_immediate_values(boards, platform)
 
     # The classification has to hold for this avrdude: a programmer that cannot
     # exist must be reported, or every 'passed' above means nothing.
